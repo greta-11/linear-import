@@ -1,0 +1,186 @@
+Duplicate ID,Routed To,Title,Description,Status,Estimate,Priority,Labels,Assignee,Created,Archived
+G01,linear_import.csv,Implement 2025 brand guidelines,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · January 1, 2025 · Reported by Dawn Garcia dawn.garcia@riderapp.com",Backlog,2,Medium,"Platform/Android, Source/Driver Forum, Driver KYC Verification, Referral Program, Duplicate/Group 01",,2025-01-01,
+G01,linear_import.csv,Implement 2025 brand guidelines,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · October 23, 2024 · Reported by Cody Taylor cody.taylor@riderapp.com",Needs Review,3,Low,"Platform/Android, Source/Customer Support, Real-Time Incident Reporting, Duplicate/Group 01",,2024-10-23,
+G02,linear_import.csv,Testing Rider App Keyboard functionality,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · November 27, 2024 · Reported by Craig French craig.french@riderapp.com",In Progress,5,High,"Platform/iOS, Source/User Feedback, In-App Chat, Referral Program, Duplicate/Group 02",,2024-11-27,
+G02,linear_import.csv,Testing Rider App Keyboard functionality,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · June 6, 2025 · Reported by Kristen Wood kristen.wood@riderapp.com",Needs Review,8,Medium,"Platform/Web, Source/Executive Request, Real-Time Incident Reporting, Duplicate/Group 02",,2025-06-06,
+G02,linear_import.csv,Testing Rider App Keyboard functionality,"---
+Migrated from Notion · October 28, 2024 · Reported by Jennifer Gill jennifer.gill@riderapp.com",Shipped,5,Medium,"Platform/Cross-platform, Source/Internal QA, In-App Chat, Referral Program, Duplicate/Group 02",,2024-10-28,
+G03,linear_import.csv,"As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · September 12, 2024 · Reported by Erica Peters erica.peters@riderapp.com",Won't Do,1,High,"Platform/Android, Source/Executive Request, Regional Regulations, Route Optimization, Duplicate/Group 03",,2024-09-12,
+G03,linear_import.csv,"As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · August 30, 2024 · Reported by Adrienne Rhodes adrienne.rhodes@riderapp.com",Won't Do,5,High,"Platform/Backend, Source/Customer Support, Route Optimization, Duplicate/Group 03",,2024-08-30,
+G03,linear_import.csv,"As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · February 11, 2025 · Reported by Vincent Roy vincent.roy@riderapp.com",Backlog,8,Low,"Platform/Web, Source/Internal QA, In-App Chat, Referral Program, Duplicate/Group 03",,2025-02-11,
+G04,linear_import.csv,"As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · February 27, 2025 · Reported by Nicholas Perkins nicholas.perkins@riderapp.com",Shipped,3,High,"Platform/iOS, Source/User Feedback, In-App Chat, Route Optimization, Duplicate/Group 04",,2025-02-27,
+G04,linear_import.csv,"As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · August 16, 2024 · Reported by Brandi Acevedo brandi.acevedo@riderapp.com",Won't Do,2,Medium,"Platform/Cross-platform, Source/Internal QA, Booking Flow, Real-Time Incident Reporting, Duplicate/Group 04",,2024-08-16,
+G04,linear_import.csv,"As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · August 26, 2024 · Reported by Cassandra Andersen cassandra.andersen@riderapp.com",Won't Do,8,Low,"Platform/Web, Source/Customer Support, Real-Time Incident Reporting, Route Optimization, Duplicate/Group 04",,2024-08-26,
+G05,linear_import.csv,"As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · June 17, 2025 · Reported by Joel Bradley joel.bradley@riderapp.com",Shipped,8,High,"Platform/Web, Source/Internal QA, Real-Time Incident Reporting, Route Optimization, Duplicate/Group 05",,2025-06-17,
+G05,linear_import.csv,"As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · April 24, 2025 · Reported by Rebekah Smith rebekah.smith@riderapp.com",Won't Do,1,Low,"Platform/Cross-platform, Source/Customer Support, Regional Regulations, Route Optimization, Duplicate/Group 05",,2025-04-24,
+G05,linear_import.csv,"As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account","![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · May 20, 2025 · Reported by Emily Wood emily.wood@riderapp.com",Shipped,3,High,"Platform/iOS, Source/User Feedback, In-App Chat, Route Optimization, Duplicate/Group 05",,2025-05-20,
+G06,linear_import.csv,Live ride view drops off after app backgrounding,"When attempting to live ride view drops off after app backgrounding, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · March 14, 2025 · Reported by Dr. Heather Horne `dr..heather horne@riderapp.com`",Backlog,8,High,"Platform/Web, Source/Customer Support, Referral Program, Duplicate/Group 06",,2025-03-14,
+G06,linear_import.csv,Live ride view drops off after app backgrounding,"When attempting to live ride view drops off after app backgrounding, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+
+---
+Migrated from Notion · May 11, 2025 · Reported by James Baker james.baker@riderapp.com",Shipped,1,Urgent,"Platform/Backend, Source/Executive Request, Driver KYC Verification, Fraud Detection, Duplicate/Group 06",,2025-05-11,
+G07,linear_import.csv,Update brand assets,"---
+Migrated from Notion · July 19, 2025 · Reported by Samantha Wilkins samantha.wilkins@riderapp.com",Backlog,3,Urgent,"Platform/Cross-platform, Source/Sales Request, Booking Flow, Real-Time Incident Reporting, Duplicate/Group 07",,2025-07-19,
+G07,linear_import.csv,Update brand assets,"---
+Migrated from Notion · November 4, 2024 · Reported by Colin Kim colin.kim@riderapp.com",Shipped,2,High,"Platform/Cross-platform, Source/Sales Request, Real-Time Incident Reporting, Duplicate/Group 07",,2024-11-04,
+G08,linear_import.csv,Webhook retries failing silently,"Users have reported that webhook retries failing silently, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+
+---
+Migrated from Notion · October 22, 2024 · Reported by Tracey Ford tracey.ford@riderapp.com",Needs Review,8,Urgent,"Platform/Cross-platform, Source/Driver Forum, Booking Flow, Earnings Dashboard, Duplicate/Group 08",,2024-10-22,
+G08,linear_import.csv,Webhook retries failing silently,"Users have reported that webhook retries failing silently, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+
+---
+Migrated from Notion · May 5, 2025 · Reported by Robert Sanchez robert.sanchez@riderapp.com",Won't Do,3,Urgent,"Platform/Web, Source/Executive Request, Earnings Dashboard, Pricing Algorithm, Duplicate/Group 08",,2025-05-05,
+G09,linear_import.csv,Ask from Gino Fordiani,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+---
+Migrated from Notion · May 13, 2025 · Reported by Abigail Torres abigail.torres@riderapp.com",Won't Do,5,Urgent,"Platform/iOS, Source/Driver Forum, Real-Time Incident Reporting, Route Optimization, Duplicate/Group 09",,2025-05-13,
+G09,linear_import.csv,Ask from Gino Fordiani,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+---
+Migrated from Notion · July 10, 2025 · Reported by Ryan Wilson ryan.wilson@riderapp.com",Needs Review,8,Urgent,"Platform/Web, Source/User Feedback, In-App Chat, Referral Program, Duplicate/Group 09",,2025-07-10,
+G10,linear_import_flagged.csv,xyz,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · November 20, 2024 · Reported by Robert Beasley robert.beasley@riderapp.com",Backlog,1,High,"Platform/Web, Source/User Feedback, Driver KYC Verification, Fraud Detection, Duplicate/Group 10",,2024-11-20,
+G10,linear_import_flagged.csv,xyz,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · March 24, 2025 · Reported by Chris Blankenship chris.blankenship@riderapp.com",Shipped,2,Medium,"Platform/Cross-platform, Source/Sales Request, Referral Program, Duplicate/Group 10",,2025-03-24,
+G11,linear_import_flagged.csv,test,"**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+
+test
+
+---
+Migrated from Notion · January 9, 2025 · Reported by Melissa Holland melissa.holland@riderapp.com",Shipped,1,Urgent,"Platform/Backend, Source/Executive Request, Real-Time Incident Reporting, Regional Regulations, Route Optimization, Duplicate/Group 11",,2025-01-09,
+G11,linear_import_flagged.csv,test,"test
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · December 19, 2024 · Reported by Arthur Nichols arthur.nichols@riderapp.com",Needs Review,1,Urgent,"Platform/Backend, Source/Executive Request, Regional Regulations, Route Optimization, Duplicate/Group 11",,2024-12-19,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · October 13, 2024 · Reported by Brian Flowers brian.flowers@riderapp.com",Shipped,5,Medium,"Platform/Android, Source/Internal QA, Driver KYC Verification, Route Optimization, Duplicate/Group 12",,2024-10-13,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · August 1, 2024 · Reported by Brian Jennings brian.jennings@riderapp.com",Needs Review,1,Medium,"Platform/Web, Source/User Feedback, Real-Time Incident Reporting, Duplicate/Group 12",,2024-08-01,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · April 27, 2025 · Reported by Cynthia Little cynthia.little@riderapp.com",Shipped,1,Medium,"Platform/iOS, Source/User Feedback, Duplicate/Group 12",,2025-04-27,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · March 21, 2025 · Reported by Emily Robinson emily.robinson@riderapp.com",Won't Do,5,Low,"Platform/Web, Source/Internal QA, Booking Flow, Earnings Dashboard, Duplicate/Group 12",,2025-03-21,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · August 30, 2024 · Reported by Jennifer Foster jennifer.foster@riderapp.com",Needs Review,5,Low,"Platform/Cross-platform, Source/Internal QA, Driver KYC Verification, Fraud Detection, Duplicate/Group 12",,2024-08-30,
+G12,linear_import.csv,Share sales enablement with GTM teams,"---
+Migrated from Notion · January 25, 2025 · Reported by Curtis Robinson curtis.robinson@riderapp.com",Backlog,1,Low,"Platform/Backend, Source/Executive Request, Driver KYC Verification, Referral Program, Duplicate/Group 12",,2025-01-25,
+G13,linear_import.csv,Investigate significant latency issues,"---
+Migrated from Notion · October 19, 2024 · Reported by Sheila Roberts sheila.roberts@riderapp.com",Needs Review,5,Low,"Platform/Web, Source/User Feedback, Earnings Dashboard, Pricing Algorithm, Duplicate/Group 13",,2024-10-19,
+G13,linear_import.csv,Investigate significant latency issues,"'@mel said:
+
+> Noticing huge latency issue
+
+---
+Migrated from Notion · February 10, 2025 · Reported by Glen Smith glen.smith@riderapp.com",Backlog,1,High,"Platform/Android, Source/Internal QA, Real-Time Incident Reporting, Duplicate/Group 13",,2025-02-10,

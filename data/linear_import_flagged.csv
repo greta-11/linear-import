@@ -1,0 +1,350 @@
+Title,Description,Status,Estimate,Priority,Labels,Assignee,Created,Archived,Flag Tier,Flag Reason
+Sheila review,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · July 5, 2025 · Reported by Brandy Williams brandy.williams@riderapp.com",Shipped,1,High,"Platform/Web, Source/User Feedback, In-App Chat, Route Optimization",,2025-07-05,,Tier 2,"Short, vague title (13 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+requiremetn 1,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · September 7, 2024 · Reported by Amanda Allison amanda.allison@riderapp.com",Won't Do,8,Urgent,"Platform/iOS, Source/User Feedback, Real-Time Incident Reporting",,2024-09-07,,Tier 2,"Short, vague title (13 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Thign 1,"Risk Analysis:
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · December 3, 2024 · Reported by Katherine Blair katherine.blair@riderapp.com",Needs Review,2,Low,"Platform/Web, Source/App Review, Booking Flow, Earnings Dashboard",,2024-12-03,,Tier 2,"Short, vague title (7 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+RELEASE 5,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · February 1, 2025 · Reported by Tiffany Martin tiffany.martin@riderapp.com",Needs Review,1,Low,"Platform/Backend, Source/App Review, Driver KYC Verification, Route Optimization",,2025-02-01,,Tier 2,"Short, vague title (9 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Mockup,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · August 16, 2024 · Reported by James Foster james.foster@riderapp.com",Backlog,2,High,"Platform/Backend, Source/Internal QA, Real-Time Incident Reporting, Regional Regulations, Route Optimization",,2024-08-16,,Tier 2,"Short, vague title (6 chars, 1 word(s)) -- heuristic; titles like this are often real work"
+afserve,"**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+Migrated from Notion · April 28, 2025 · Reported by Matthew Ball matthew.ball@riderapp.com",Won't Do,8,Urgent,"Platform/Cross-platform, Source/Driver Forum, Real-Time Incident Reporting, Regional Regulations",,2025-04-28,,Tier 1,Description is an unfilled issue template (contains '[Brief title]')
+afsdnl;adsjnkads,"afsdnl;adsjnkads
+
+---
+Migrated from Notion · November 26, 2024 · Reported by Lisa Mason lisa.mason@riderapp.com",Needs Review,1,High,"Platform/Web, Source/Internal QA, Driver KYC Verification, Referral Program",,2024-11-26,,Tier 2,"Single all-lowercase token ('afsdnl;adsjnkads') with no spaces -- reads as a stub or keyboard mash, but may be a real shorthand"
+Update API,"---
+Migrated from Notion · October 7, 2024 · Reported by Jacqueline Kelly jacqueline.kelly@riderapp.com",Backlog,8,Urgent,"Platform/Backend, Source/Executive Request, Referral Program",,2024-10-07,,Tier 2,"Short, vague title (10 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Write spec,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · August 7, 2024 · Reported by Barbara Cline barbara.cline@riderapp.com",In Progress,3,Urgent,"Platform/iOS, Source/App Review, Fraud Detection, Pricing Algorithm",,2024-08-07,,Tier 2,"Short, vague title (10 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Captcha,"'<Issue description>
+
+## <Priority>
+
+@lena said:
+
+> I just had to do captcha 20 times 🤖
+
+---
+Migrated from Notion · March 11, 2025 · Reported by Carol Odonnell carol.odonnell@riderapp.com",Won't Do,1,Urgent,"Platform/iOS, Source/Sales Request, Booking Flow, Earnings Dashboard",,2025-03-11,,Tier 1,Description is an unfilled issue template (contains '<Issue description>')
+xyz,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · November 20, 2024 · Reported by Robert Beasley robert.beasley@riderapp.com",Backlog,1,High,"Platform/Web, Source/User Feedback, Driver KYC Verification, Fraud Detection, Duplicate/Group 10",,2024-11-20,,Tier 1,Placeholder title ('xyz') -- not a real issue
+abc,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · September 15, 2024 · Reported by Danielle Kennedy danielle.kennedy@riderapp.com",Backlog,3,Medium,"Platform/Android, Source/App Review, Booking Flow, Real-Time Incident Reporting",,2024-09-15,,Tier 1,Placeholder title ('abc') -- not a real issue
+xyz,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · March 24, 2025 · Reported by Chris Blankenship chris.blankenship@riderapp.com",Shipped,2,Medium,"Platform/Cross-platform, Source/Sales Request, Referral Program, Duplicate/Group 10",,2025-03-24,,Tier 1,Placeholder title ('xyz') -- not a real issue
+test,"**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+
+test
+
+---
+Migrated from Notion · January 9, 2025 · Reported by Melissa Holland melissa.holland@riderapp.com",Shipped,1,Urgent,"Platform/Backend, Source/Executive Request, Real-Time Incident Reporting, Regional Regulations, Route Optimization, Duplicate/Group 11",,2025-01-09,,Tier 1,Placeholder title ('test') -- not a real issue
+Test issue,"---
+Migrated from Notion · August 14, 2024 · Reported by Christopher Warren christopher.warren@riderapp.com",Shipped,3,High,"Platform/Backend, Source/Sales Request, Booking Flow, Real-Time Incident Reporting",,2024-08-14,,Tier 1,Placeholder title ('Test issue') -- not a real issue
+**Vulnerability Name:** \[Brief title\] **Date Identified:** \[MM/DD/YYYY\] **Severity:** \[Cri...,"**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+Migrated from Notion · June 5, 2025 · Reported by Justin Wilson justin.wilson@riderapp.com",Shipped,1,Low,"Platform/Backend, Source/Internal QA, Regional Regulations, Route Optimization",,2025-06-05,,Tier 1,Title is an unfilled issue template (contains '[Brief title]')
+Add logo to marketing page,"**Description:**
+*<A detailed explanation of the feature or enhancement.>*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**URL Links:**
+[https://www.cleanshot.com](https://www.cleanshot.com)
+
+**Priority:**
+
+- [ ] Low
+- [ ] Medium
+- [ ] High
+
+## **Additional Context:**
+*Any other relevant information or background.*
+
+<Issue description>
+
+## <Priority>
+
+@lena said:
+
+> We're missing the logo on the marketing page. Can you add it in????
+
+---
+Migrated from Notion · November 29, 2024 · Reported by Natalie Duffy natalie.duffy@riderapp.com",Backlog,2,Urgent,"Platform/Cross-platform, Source/Customer Support, Real-Time Incident Reporting, Route Optimization",,2024-11-29,,Tier 1,Description is an unfilled issue template (contains '<Issue description>')
+dofanboben,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · November 11, 2024 · Reported by Carrie Simpson carrie.simpson@riderapp.com",Needs Review,8,Urgent,"Platform/Android, Source/App Review, Referral Program",,2024-11-11,,Tier 2,"Single all-lowercase token ('dofanboben') with no spaces -- reads as a stub or keyboard mash, but may be a real shorthand"
+Project audit,"Recap of how the Mexico launch project has changed throughout it's lifecycle. target date & start date changes, and how much scope increased decreased.
+
+---
+Migrated from Notion · July 12, 2025 · Reported by Hailey Mullen hailey.mullen@riderapp.com",In Progress,3,Urgent,"Platform/Web, Source/Executive Request, Real-Time Incident Reporting",,2025-07-12,,Tier 2,"Short, vague title (13 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Data Analysis,"![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · February 15, 2025 · Reported by Brandon Robinson brandon.robinson@riderapp.com",Needs Review,1,Low,"Platform/Cross-platform, Source/App Review, Real-Time Incident Reporting, Regional Regulations",,2025-02-15,,Tier 2,"Short, vague title (13 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Coding Agents,"Linear has partnered with a number of AI tools that that are available to integrate with your workspace. 
+
+These will provide a number of different use cases focussed on increasing development velocity, generating draft PRs, and providing visibility into your organization.
+
+---
+Migrated from Notion · May 5, 2025 · Reported by Tiffany Stewart tiffany.stewart@riderapp.com",In Progress,2,Low,"Platform/Cross-platform, Source/User Feedback, Driver KYC Verification, Referral Program",,2025-05-05,,Tier 2,"Short, vague title (13 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+Client meeting,"---
+Migrated from Notion · July 2, 2025 · Reported by Justin Brown justin.brown@riderapp.com",Needs Review,3,Low,"Platform/Backend, Source/User Feedback, Route Optimization",,2025-07-02,,Tier 2,"Short, vague title (14 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+DDoS attack,"**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+Migrated from Notion · September 27, 2024 · Reported by Jill Russell jill.russell@riderapp.com",Needs Review,8,Low,"Platform/Android, Source/Driver Forum, In-App Chat, Route Optimization",,2024-09-27,,Tier 1,Description is an unfilled issue template (contains '[Brief title]')
+fdsaabklbfsdabjdsfa,"fdsaabklbfsdabjdsfa
+
+---
+Migrated from Notion · March 23, 2025 · Reported by David Novak david.novak@riderapp.com",Shipped,2,Medium,"Platform/iOS, Source/Sales Request, Driver KYC Verification, Earnings Dashboard",,2025-03-23,,Tier 2,"Single all-lowercase token ('fdsaabklbfsdabjdsfa') with no spaces -- reads as a stub or keyboard mash, but may be a real shorthand"
+Relatesd toX,"---
+Migrated from Notion · May 7, 2025 · Reported by Nathan Bullock nathan.bullock@riderapp.com",Backlog,1,Urgent,"Platform/Cross-platform, Source/Customer Support, Referral Program",,2025-05-07,,Tier 2,"Short, vague title (12 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+kljdaskhbadsbhlads,"kljdaskhbadsbhlads
+
+---
+Migrated from Notion · March 11, 2025 · Reported by Lynn Lopez lynn.lopez@riderapp.com",Needs Review,1,High,"Platform/Web, Source/App Review, Booking Flow, Earnings Dashboard",,2025-03-11,,Tier 2,"Single all-lowercase token ('kljdaskhbadsbhlads') with no spaces -- reads as a stub or keyboard mash, but may be a real shorthand"
+app crashed,"**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+
+---
+Migrated from Notion · March 24, 2025 · Reported by Jessica Mckee jessica.mckee@riderapp.com",Won't Do,3,Low,"Platform/Backend, Source/Customer Support, Real-Time Incident Reporting, Regional Regulations",,2025-03-24,,Tier 2,"Short, vague title (11 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+test,"test
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s)
+
+---
+Migrated from Notion · December 19, 2024 · Reported by Arthur Nichols arthur.nichols@riderapp.com",Needs Review,1,Urgent,"Platform/Backend, Source/Executive Request, Regional Regulations, Route Optimization, Duplicate/Group 11",,2024-12-19,,Tier 1,Placeholder title ('test') -- not a real issue
+Design request,"**Description:** 
+*A detailed explanation of the feature or enhancement.*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**Priority:**
+
+- [ ] Low
+- [X] Medium
+- [ ] High
+
+**Additional Context:**
+*Any other relevant information or background.*
+
+---
+Migrated from Notion · April 21, 2025 · Reported by Justin Hoover justin.hoover@riderapp.com",In Progress,2,High,"Platform/iOS, Source/User Feedback, In-App Chat, Route Optimization",,2025-04-21,,Tier 2,"Short, vague title (14 chars, 2 word(s)) -- heuristic; titles like this are often real work"
+s,"---
+Migrated from Notion · October 16, 2024 · Reported by George Cook george.cook@riderapp.com",Backlog,1,Low,"Platform/Android, Source/Sales Request, Driver KYC Verification, Earnings Dashboard",,2024-10-16,,Tier 1,Title is 1 character(s) long -- identifies nothing
