@@ -39,8 +39,10 @@ every state the importer has to invent is created as backlog. If `Needs
 Review` and `Won't Do` do not already exist, those issues land in the backlog
 and nothing reports an error.
 
-`validate.py` cannot see the Linear side, so it cannot verify this for you. It
-prints the list at the end of every run instead.
+`validate.py` cannot see the Linear side directly, but it can check most of
+this after the fact from an export — see V9 below. It prints this list at the
+end of every run regardless, since the one pair it cannot decide is the one
+worth checking yourself.
 
 ---
 
@@ -180,25 +182,42 @@ workspace that already contains issues does not produce spurious extras.
 | V6 | Estimate matches what was sent |
 | V7 | Status matches what was sent |
 | V8 | Every workflow state that was sent exists in the export |
-| V9 | Labels match what was sent |
-| V10 | Label groups survived (when the export carries them — see below) |
-| V11 | Images were re-hosted by Linear, not left pointing at the original host |
-| V12 | The migration footer is intact |
-| V13 | `Created` holds the original Notion dates, not the import time |
-| V14 | `Assignee` is unset, as sent |
+| V9 | Each workflow state has the **type** it was supposed to have |
+| V10 | Labels match what was sent |
+| V11 | Label groups survived (when the export carries them — see below) |
+| V12 | Images were re-hosted by Linear, not left pointing at the original host |
+| V13 | The migration footer is intact |
+| V14 | `Created` holds the original Notion dates, not the import time |
+| V15 | `Assignee` is unset, as sent |
 
 Exits 0 when everything passes, 1 otherwise. A column missing from the export
 downgrades its check to a skip rather than failing it.
 
-V8 is the one to watch. If the pre-flight step was skipped, `Needs Review` and
-`Won't Do` will have collapsed into the backlog, and this is the check that
-says so.
+V8 and V9 are the pair to watch, and V9 is the sharper of the two.
+
+V8 only asks whether a state *name* came back. That is not enough: a state the
+importer had to invent keeps the name it was given and is simply created with
+the wrong type, so V8 passes while the workspace is quietly wrong.
+
+V9 catches that. No export column names a state's type, but Linear stamps
+exactly one timestamp when it creates an issue, chosen by the type of the state
+the issue lands in — `Started` for a started state, `Completed` for a completed
+one, `Canceled` for a canceled one. Reading which column got stamped recovers
+the type. An `In Progress` with no `Started` stamp, or a `Won't Do` with no
+`Canceled` stamp, means that state did not exist before the import and was
+auto-created as backlog.
+
+The gap: backlog and unstarted both stamp nothing, so `Backlog` and `Needs
+Review` cannot be told apart this way. V9 reports that pair as undecidable
+rather than passing them silently, and they stay a manual check. The three that
+*can* be verified are the three most likely to be wrong.
 
 ### What it cannot tell you
 
-It reads a CSV, so it cannot confirm the five workflow states were created
-with the *right type* — only that issues came back carrying those names. It
-cannot verify that description markdown renders correctly. It cannot recover
+It can recover a workflow state's type for started, completed and canceled
+states (see V9), but not for backlog versus unstarted — those two are
+indistinguishable in an export, so confirm that pair by hand. It cannot verify
+that description markdown renders correctly. It cannot recover
 what a dropped row contained. And it cannot distinguish a deliberate decision
 not to import the flagged file from a failure to import it, which is why it
 asks you which files you imported rather than guessing.

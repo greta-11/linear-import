@@ -32,6 +32,9 @@ COLUMN_ALIASES = {
     "Labels":      ["Labels", "Label", "Label Names"],
     "Assignee":    ["Assignee", "Assignee Name", "Assigned To"],
     "Created":     ["Created", "Created At", "Created Date", "createdAt"],
+    "Started":     ["Started", "Started At", "startedAt"],
+    "Completed":   ["Completed", "Completed At", "completedAt"],
+    "Canceled":    ["Canceled", "Cancelled", "Canceled At", "canceledAt"],
     "Identifier":  ["ID", "Identifier", "Issue ID", "Key", "Issue Key"],
 }
 REQUIRED = ["Title", "Description"]
@@ -46,6 +49,14 @@ FOOTER_SEPARATOR = "---"
 PRIORITY_BY_NUMBER = {"0": "No priority", "1": "Urgent", "2": "High", "3": "Medium", "4": "Low"}
 UNPRIORITISED = "No priority"
 
+# Linear stamps exactly one of these timestamps when an issue is created, chosen
+# by the *type* of the workflow state it lands in. That makes the type readable
+# from an export even though no column names it directly. Backlog and unstarted
+# both stamp nothing, so those two cannot be told apart this way.
+STATE_TYPE_SIGNALS = [("Canceled", "canceled"), ("Completed", "completed"),
+                      ("Started", "started")]
+UNSTAMPED = "backlog or unstarted"
+
 REQUIRED_STATES = [
     ("Backlog", "backlog"),
     ("Needs Review", "unstarted"),
@@ -53,6 +64,8 @@ REQUIRED_STATES = [
     ("Shipped", "completed"),
     ("Won't Do", "canceled"),
 ]
+
+EXPECTED_STATE_TYPES = None  # built from REQUIRED_STATES below
 
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
 
@@ -62,6 +75,8 @@ IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
 # as a source host -- otherwise re-validating a migration that was itself built
 # from a Linear export would flag every image.
 LINEAR_ASSET_HOSTS = {"uploads.linear.app", "public.linear.app"}
+
+EXPECTED_STATE_TYPES = dict(REQUIRED_STATES)
 
 MAX_SHOWN = 3
 
@@ -164,6 +179,19 @@ def read_csv(path):
     with open(path, encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         return reader.fieldnames or [], list(reader)
+
+
+def infer_state_type(row, columns):
+    """Read a workflow state's type off the timestamp Linear stamped at import.
+
+    Returns "canceled", "completed", "started", or UNSTAMPED when nothing was
+    stamped -- which means backlog or unstarted, with no way to tell which from a
+    CSV."""
+    for canonical, state_type in STATE_TYPE_SIGNALS:
+        column = columns.get(canonical)
+        if column and (row.get(column) or "").strip():
+            return state_type
+    return UNSTAMPED
 
 
 def strip_export_escape(text):
@@ -360,9 +388,8 @@ def main():
     compare_field(report, "V7", "Status survived the import", pairs, columns,
                   "Status", detail="per matched title")
 
-    # V8 -- the failure this whole migration is most exposed to. The importer can
-    # only auto-create backlog, started and completed states, so any status it has
-    # to invent collapses into the backlog.
+    # V8 -- did every state name that was sent come back at all? V9 then asks the
+    # harder question of whether each one has the right type.
     if "Status" in columns:
         sent_statuses = {(r.get("Status") or "").strip() for r in import_rows}
         sent_statuses.discard("")
@@ -375,7 +402,51 @@ def main():
     else:
         report.skip("V8", "Every workflow state exists in the export", "no Status column")
 
-    # V9 -- labels. Some exports carry the group prefix, some only the child name.
+    # V9 -- the type each workflow state was created with. This is the check the
+    # pre-flight step exists for: a state the importer had to invent is created as
+    # backlog, so an "In Progress" that never got a Started stamp, or a "Won't Do"
+    # that never got a Canceled stamp, means the state did not exist beforehand.
+    if any(c in columns for c, _ in STATE_TYPE_SIGNALS):
+        observed = collections.defaultdict(collections.Counter)
+        for row in migrated:
+            observed[get(row, columns, "Status").strip()][infer_state_type(row, columns)] += 1
+
+        problems = []
+        for status, types in sorted(observed.items()):
+            actual = types.most_common(1)[0][0]
+            expected = EXPECTED_STATE_TYPES.get(status)
+            if len(types) > 1:
+                spread = ", ".join(f"{t} x{n}" for t, n in types.most_common())
+                problems.append(f"{status!r} is inconsistent across issues: {spread}")
+            elif expected is None:
+                continue
+            elif expected in ("backlog", "unstarted"):
+                if actual != UNSTAMPED:
+                    problems.append(
+                        f"{status!r} behaves as {actual!r}, expected {expected!r}")
+            elif actual != expected:
+                problems.append(
+                    f"{status!r} behaves as {actual!r}, expected {expected!r} \u2014 the "
+                    "state was most likely auto-created by the import because it did "
+                    "not already exist")
+
+        summary = "; ".join(
+            f"{status}={types.most_common(1)[0][0]}" for status, types in sorted(observed.items()))
+        report.check("V9", "Workflow state types are as required", not problems,
+                     len(observed), summary, problems)
+
+        undecidable = sorted(
+            status for status, types in observed.items()
+            if types.most_common(1)[0][0] == UNSTAMPED
+            and EXPECTED_STATE_TYPES.get(status) in ("backlog", "unstarted"))
+        if undecidable:
+            print(f"         \u2514\u2500 note: {', '.join(repr(s) for s in undecidable)} stamp no "
+                  "timestamp, so backlog and unstarted cannot be told apart here")
+    else:
+        report.skip("V9", "Workflow state types are as required",
+                    "export has no Started/Completed/Canceled columns")
+
+    # V10 -- labels. Some exports carry the group prefix, some only the child name.
     if "Labels" in columns:
         sent_all = {lab for r in import_rows for lab in label_set(r.get("Labels"))}
         got_all = {lab for r in migrated for lab in label_set(get(r, columns, "Labels"))}
@@ -386,7 +457,7 @@ def main():
             have = sorted(label_set(", ".join(get(r, columns, "Labels") for r in got), not grouped))
             if want != have:
                 mismatches.append(f"{title!r}: sent {want}, export has {have}")
-        report.check("V9", "Labels survived the import", not mismatches,
+        report.check("V10", "Labels survived the import", not mismatches,
                      len(got_all), f"distinct labels ({'grouped' if grouped else 'flat'} in export)",
                      mismatches)
 
@@ -396,16 +467,16 @@ def main():
                 sent_groups[lab.split("/")[0]].add(lab)
         if grouped:
             lost = [g for g in sent_groups if not any(l.startswith(g + "/") for l in got_all)]
-            report.check("V10", "Label groups preserved", not lost, len(sent_groups),
+            report.check("V11", "Label groups preserved", not lost, len(sent_groups),
                          "groups sent", [f"group {g!r} is absent from the export" for g in lost])
         else:
-            report.skip("V10", "Label groups preserved",
+            report.skip("V11", "Label groups preserved",
                         "export renders labels without group prefixes")
     else:
-        report.skip("V9", "Labels survived the import", "no Labels column")
-        report.skip("V10", "Label groups preserved", "no Labels column")
+        report.skip("V10", "Labels survived the import", "no Labels column")
+        report.skip("V11", "Label groups preserved", "no Labels column")
 
-    # V11 -- images. The importer re-hosts markdown images on Linear's CDN. Any URL
+    # V12 -- images. The importer re-hosts markdown images on Linear's CDN. Any URL
     # still pointing at the original host means that upload did not happen.
     sent_hosts = set()
     for row in import_rows:
@@ -421,29 +492,29 @@ def main():
                 if host in sent_hosts:
                     stale.append(f"{get(row, columns, 'Title')!r} still points at {host}")
         with_images = sum(1 for r in migrated if IMAGE_RE.search(get(r, columns, "Description")))
-        report.check("V11", "Images re-hosted by Linear", not stale, with_images,
+        report.check("V12", "Images re-hosted by Linear", not stale, with_images,
                      f"issues with an image; original host(s): {', '.join(sorted(sent_hosts))}",
                      stale)
     else:
-        report.skip("V11", "Images re-hosted by Linear", "no images in the imported file(s)")
+        report.skip("V12", "Images re-hosted by Linear", "no images in the imported file(s)")
 
-    # V12 -- the footer carries the reporter attribution that the Assignee column
+    # V13 -- the footer carries the reporter attribution that the Assignee column
     # could not, so losing it loses the only record of who raised the issue.
     no_footer = [get(r, columns, "Title") for r in migrated
                  if FOOTER_SEPARATOR not in get(r, columns, "Description")]
-    report.check("V12", "Migration footer intact", not no_footer, len(migrated),
+    report.check("V13", "Migration footer intact", not no_footer, len(migrated),
                  "migrated issues", no_footer)
 
-    compare_field(report, "V13", "Created date preserved", pairs, columns,
+    compare_field(report, "V14", "Created date preserved", pairs, columns,
                   "Created", normalize_date, "original Notion dates, not import time")
 
     if "Assignee" in columns:
         assigned = [get(r, columns, "Title") for r in migrated
                     if get(r, columns, "Assignee").strip()]
-        report.check("V14", "Assignee left unset, as sent", not assigned, len(migrated),
+        report.check("V15", "Assignee left unset, as sent", not assigned, len(migrated),
                      "migrated issues", assigned)
     else:
-        report.skip("V14", "Assignee left unset, as sent", "no Assignee column")
+        report.skip("V15", "Assignee left unset, as sent", "no Assignee column")
 
     print(bar)
     verdict = "FAILED" if report.failures else "PASSED"
