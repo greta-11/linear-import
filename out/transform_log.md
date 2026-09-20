@@ -1,6 +1,6 @@
 # Transform run log
 
-- Run: 2026-09-20T20:26:45
+- Run: 2026-09-20T21:11:56
 - Input: `data/Rideshare_Issue_Tracker.csv`
 - Input SHA-256: `2743f02cd5bfa758fc8eb316c8c750f8ee87f9a081771d34846bd53b81ef8b5f`
 - Rows read: 200
@@ -143,13 +143,13 @@ Whether a terse but plausible title is a real request or somebody's scratch note
 
 ## Before importing
 
-The importer matches workflow states case-insensitively by name, and auto-creates any it cannot find. It can only auto-create three types — backlog, started and completed — and it picks between them using transition timestamps, which this output deliberately does not contain. Every one of these states must therefore already exist on the target team, spelled exactly like this, or those issues land silently in the backlog:
+The importer matches workflow states case-insensitively by name, and auto-creates any it cannot find. It can only auto-create three types — backlog, started and completed — and it picks between them using transition timestamps, which this output deliberately does not contain. Every one of these states must therefore already exist on the target team, spelled exactly like this, or those issues land silently in the backlog. Two of them are Linear's own states renamed, so that the team does not end up carrying both the built-in name and the migrated one:
 
-| Status | Required type |
-| --- | --- |
-| Backlog | backlog |
-| Needs Review | unstarted |
-| In Progress | started |
-| Shipped | completed |
-| Won't Do | canceled |
+| Status | Category | Action in Linear |
+| --- | --- | --- |
+| Backlog | backlog | native, no action |
+| Needs Review | backlog | add it |
+| In Progress | started | native, no action |
+| Shipped | completed | rename Linear's "Done" |
+| Won't Do | canceled | rename Linear's "Canceled" |
 

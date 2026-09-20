@@ -89,13 +89,16 @@ MONTHS = {
 # The importer only ever auto-creates workflow states of type backlog, started or
 # completed, and it derives which from completedAt/startedAt. With no transition
 # timestamps in the output, every unmatched status name would be created as
-# backlog. These five must exist on the target team before the import runs.
+# backlog. These five must exist on the target team before the import runs. Two
+# of them are Linear's own states under a different name, so the action is a
+# rename: creating "Shipped" alongside the built-in "Done" would leave the team
+# carrying both.
 REQUIRED_STATES = [
-    ("Backlog", "backlog"),
-    ("Needs Review", "unstarted"),
-    ("In Progress", "started"),
-    ("Shipped", "completed"),
-    ("Won't Do", "canceled"),
+    ("Backlog", "backlog", "native, no action"),
+    ("Needs Review", "backlog", "add it"),
+    ("In Progress", "started", "native, no action"),
+    ("Shipped", "completed", 'rename Linear\'s "Done"'),
+    ("Won't Do", "canceled", 'rename Linear\'s "Canceled"'),
 ]
 
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$")
@@ -562,11 +565,11 @@ def print_report(source_path, counters, records, groups, importable, flagged, mi
     print()
     print(f"  Log: {LOG_PATH}")
     print()
-    print("  Before importing, create these workflow states on the target team.")
+    print("  Set up these workflow states on the target team before importing.")
     print("  The importer can only auto-create backlog, started and completed")
     print("  types, so anything missing here lands silently in the backlog:")
-    for name, state_type in REQUIRED_STATES:
-        print(f"    {name:<16} {state_type}")
+    for name, category, action in REQUIRED_STATES:
+        print(f"    {name:<16} {category:<11} {action}")
     print()
 
 
@@ -737,12 +740,13 @@ def write_log(source_path, digest, counters, records, groups, importable, flagge
         "completed \u2014 and it picks between them using transition timestamps, which this "
         "output deliberately does not contain. Every one of these states must therefore "
         "already exist on the target team, spelled exactly like this, or those issues land "
-        "silently in the backlog:")
+        "silently in the backlog. Two of them are Linear's own states renamed, so that the "
+        "team does not end up carrying both the built-in name and the migrated one:")
     add("")
-    add("| Status | Required type |")
-    add("| --- | --- |")
-    for name, state_type in REQUIRED_STATES:
-        add(f"| {name} | {state_type} |")
+    add("| Status | Category | Action in Linear |")
+    add("| --- | --- | --- |")
+    for name, category, action in REQUIRED_STATES:
+        add(f"| {name} | {category} | {action} |")
     add("")
 
     os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)

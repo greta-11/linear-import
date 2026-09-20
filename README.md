@@ -15,15 +15,18 @@ Both prompt you to choose from the CSVs in the working directory and `data/`.
 
 ## Before you import
 
-Create these five workflow states on the target team first, spelled exactly:
+Set up these five workflow states on the target team first, spelled exactly:
 
-| Status | Type |
-| --- | --- |
-| Backlog | backlog |
-| Needs Review | unstarted |
-| In Progress | started |
-| Shipped | completed |
-| Won't Do | canceled |
+| CSV status | Category | Native to Linear | Action |
+| --- | --- | --- | --- |
+| Backlog | backlog | Y | none |
+| Needs Review | backlog | N | add it |
+| In Progress | started | Y | none |
+| Shipped | completed | N | rename `Done` |
+| Won't Do | canceled | N | rename `Canceled` |
+
+Two are renames rather than new states, so the team does not end up carrying
+both `Done` and `Shipped`.
 
 The importer creates any state it cannot find, but only as backlog, started or
 completed — and it picks between them using transition timestamps this output
@@ -70,6 +73,8 @@ is the pre-flight step above, which is why it is not optional.
 | `data/linear_import_flagged.csv` | After a human reads it |
 | `data/missing_key_values.csv` | After the blank fields are filled in |
 | `data/duplicates_review.csv` | **No** — every row is a copy |
+
+All four are written by `transform.py`; only the source export is in the repo.
 
 Row counts for a given run are in `out/transform_log.md`, with each duplicate
 group, every flagged row and its reason, and the fenced emails.
@@ -163,9 +168,9 @@ one timestamp at creation chosen by that type — `Started`, `Completed` or
 
 ### What it cannot tell you
 
-- Backlog vs unstarted. Both stamp no timestamp, so `Backlog` and `Needs Review`
-  are indistinguishable in an export. V9 reports that pair as undecidable rather
-  than passing it; check by hand.
+- Backlog vs unstarted. Neither stamps a timestamp, so V9 confirms a state is
+  one of the two without separating them. Immaterial here: no state in the
+  mapping is unstarted.
 - Label grouping. Linear's export renders `Labels` as child names only —
   `Platform/Backend` comes back as `Backend` — so group structure is invisible
   even when correct. V10 compares on child names when prefixes are absent; V11

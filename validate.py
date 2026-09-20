@@ -52,17 +52,19 @@ UNPRIORITISED = "No priority"
 # Linear stamps exactly one of these timestamps when an issue is created, chosen
 # by the *type* of the workflow state it lands in. That makes the type readable
 # from an export even though no column names it directly. Backlog and unstarted
-# both stamp nothing, so those two cannot be told apart this way.
+# both stamp nothing, so a state that stamps nothing is known to be one of the
+# two without which being determinable -- immaterial here, since no state in this
+# mapping is expected to be unstarted.
 STATE_TYPE_SIGNALS = [("Canceled", "canceled"), ("Completed", "completed"),
                       ("Started", "started")]
 UNSTAMPED = "backlog or unstarted"
 
 REQUIRED_STATES = [
-    ("Backlog", "backlog"),
-    ("Needs Review", "unstarted"),
-    ("In Progress", "started"),
-    ("Shipped", "completed"),
-    ("Won't Do", "canceled"),
+    ("Backlog", "backlog", "native, no action"),
+    ("Needs Review", "backlog", "add it"),
+    ("In Progress", "started", "native, no action"),
+    ("Shipped", "completed", 'rename Linear\'s "Done"'),
+    ("Won't Do", "canceled", 'rename Linear\'s "Canceled"'),
 ]
 
 EXPECTED_STATE_TYPES = None  # built from REQUIRED_STATES below
@@ -76,7 +78,7 @@ IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
 # from a Linear export would flag every image.
 LINEAR_ASSET_HOSTS = {"uploads.linear.app", "public.linear.app"}
 
-EXPECTED_STATE_TYPES = dict(REQUIRED_STATES)
+EXPECTED_STATE_TYPES = {name: category for name, category, _ in REQUIRED_STATES}
 
 MAX_SHOWN = 3
 
@@ -185,8 +187,7 @@ def infer_state_type(row, columns):
     """Read a workflow state's type off the timestamp Linear stamped at import.
 
     Returns "canceled", "completed", "started", or UNSTAMPED when nothing was
-    stamped -- which means backlog or unstarted, with no way to tell which from a
-    CSV."""
+    stamped, which narrows it to backlog or unstarted without separating them."""
     for canonical, state_type in STATE_TYPE_SIGNALS:
         column = columns.get(canonical)
         if column and (row.get(column) or "").strip():
@@ -440,8 +441,9 @@ def main():
             if types.most_common(1)[0][0] == UNSTAMPED
             and EXPECTED_STATE_TYPES.get(status) in ("backlog", "unstarted"))
         if undecidable:
-            print(f"         \u2514\u2500 note: {', '.join(repr(s) for s in undecidable)} stamp no "
-                  "timestamp, so backlog and unstarted cannot be told apart here")
+            print("         \u2514\u2500 note: no timestamp stamped for "
+                  f"{', '.join(repr(s) for s in undecidable)}; confirmed as "
+                  "backlog-or-unstarted, not separated")
     else:
         report.skip("V9", "Workflow state types are as required",
                     "export has no Started/Completed/Canceled columns")
@@ -522,10 +524,11 @@ def main():
           f"{f', {report.skipped} skipped' if report.skipped else ''}")
     print()
 
-    print("  This script checks the export only. It cannot confirm that the five")
-    print("  workflow states were created with the right type — check by hand:")
-    for name, state_type in REQUIRED_STATES:
-        print(f"    {name:<16} {state_type}")
+    print("  V9 reads each state's type from the timestamp Linear stamps at import.")
+    print("  A state that stamps nothing is backlog or unstarted; V9 does not")
+    print("  separate those two, which is immaterial when none should be unstarted:")
+    for name, category, action in REQUIRED_STATES:
+        print(f"    {name:<16} {category:<11} {action}")
     print()
     print("  Also outside its reach: whether description markdown renders correctly,")
     print("  what a dropped row contained, and whether a missing flagged issue was a")
