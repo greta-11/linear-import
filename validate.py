@@ -55,6 +55,14 @@ REQUIRED_STATES = [
 ]
 
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
+
+# Linear re-hosts imported images on its own CDN, so a URL still pointing at the
+# source host means that upload did not happen. A URL already on Linear's CDN in
+# the file that was imported is not evidence of anything, and must not be treated
+# as a source host -- otherwise re-validating a migration that was itself built
+# from a Linear export would flag every image.
+LINEAR_ASSET_HOSTS = {"uploads.linear.app", "public.linear.app"}
+
 MAX_SHOWN = 3
 
 
@@ -158,6 +166,17 @@ def read_csv(path):
         return reader.fieldnames or [], list(reader)
 
 
+def strip_export_escape(text):
+    """Linear's CSV export prefixes a single quote to any text field starting with
+    a character a spreadsheet would try to interpret -- in practice "@", ">" and
+    "---". A description that is nothing but the migration footer starts with
+    "---", so this affects every issue whose body was empty. The importer strips
+    the same character on the way in, so removing it here restores the text that
+    was actually sent."""
+    text = text or ""
+    return text[1:] if text.startswith("'") else text
+
+
 def normalize_title(title):
     return re.sub(r"\s+", " ", (title or "").strip().lower()).rstrip(".!?")
 
@@ -248,6 +267,12 @@ def main():
 
     export_header, export_rows = read_csv(export_path)
     columns, missing = resolve_columns(export_header)
+
+    for canonical in ("Title", "Description"):
+        column = columns.get(canonical)
+        if column:
+            for row in export_rows:
+                row[column] = strip_export_escape(row.get(column))
 
     print()
     print("  Linear import validation")
@@ -385,7 +410,9 @@ def main():
     sent_hosts = set()
     for row in import_rows:
         for url in IMAGE_RE.findall(row.get("Description", "")):
-            sent_hosts.add(url.split("/")[2] if "//" in url else url)
+            host = url.split("/")[2] if "//" in url else url
+            if host not in LINEAR_ASSET_HOSTS:
+                sent_hosts.add(host)
     if sent_hosts:
         stale = []
         for row in migrated:

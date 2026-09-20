@@ -181,7 +181,7 @@ workspace that already contains issues does not produce spurious extras.
 | V7 | Status matches what was sent |
 | V8 | Every workflow state that was sent exists in the export |
 | V9 | Labels match what was sent |
-| V10 | Label groups survived |
+| V10 | Label groups survived (when the export carries them — see below) |
 | V11 | Images were re-hosted by Linear, not left pointing at the original host |
 | V12 | The migration footer is intact |
 | V13 | `Created` holds the original Notion dates, not the import time |
@@ -202,3 +202,18 @@ cannot verify that description markdown renders correctly. It cannot recover
 what a dropped row contained. And it cannot distinguish a deliberate decision
 not to import the flagged file from a failure to import it, which is why it
 asks you which files you imported rather than guessing.
+
+It also cannot confirm label *grouping* from an export alone. Linear's CSV
+export renders the `Labels` column as child names only — a label sent as
+`Platform/Backend` comes back as `Backend` — so the group structure is not
+visible in the file even when it exists correctly in the workspace. V9 detects
+which convention the export uses and compares on child names when the prefixes
+are absent; V10 reports a skip rather than a pass it cannot justify. Check the
+groups in Linear's label settings instead.
+
+Two quirks of Linear's export are handled rather than tripped over. Text fields
+beginning with `@`, `>` or `---` come back with a single quote prefixed, which
+matters here because a description that is nothing but the migration footer
+starts with `---`; the quote is stripped before comparing. And image URLs
+already on Linear's CDN in the file that was sent are not treated as source
+hosts, so V11 cannot produce a false failure when a migration is re-validated.
