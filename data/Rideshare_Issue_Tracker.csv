@@ -1,0 +1,1564 @@
+﻿Title,Created Date,Description,Image,Platform,Priority,Reporter,Size,Source,Status,Tags,email
+"
+Issue within GTM readiness
+","November 5, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Medium,Vincent Russell,L,Executive Request,Backlog,"Booking Flow, Earnings Dashboard",vincent.russell@riderapp.com
+"
+Fix flickering effect on homepage logo
+","February 4, 2025","
+'@lena said:
+
+> Homepage has a flickering effect on logo
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Medium,Haley Jordan,XL,App Review,In Progress,"Real-Time Incident Reporting, Regional Regulations",haley.jordan@riderapp.com
+"
+Update payment methods and flow
+","September 10, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Medium,Angela Taylor,XL,Driver Forum,Shipped,"Driver KYC Verification, Fraud Detection",angela.taylor@riderapp.com
+"
+Implement 2025 brand guidelines
+","January 1, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Medium,Dawn Garcia,S,Driver Forum,Backlog,"Driver KYC Verification, Referral Program",dawn.garcia@riderapp.com
+"
+Incomplete App Functionality and Driver Availability in Mexico
+","May 14, 2025","
+Users in various cities across Mexico are reporting limited functionality in the ride-share app, including incomplete localization (e.g. untranslated UI elements), missing payment options (e.g. cash), and extremely limited driver availability even in large metro areas. In-app support options also appear to be disabled or redirect to generic help content in English.
+
+**User Report**:
+
+> ""I tried using the app during a trip to Mexico City, and it felt half-functional. Some parts of the UI were still in English, even though my phone is set to Spanish. I couldn’t find any available drivers for over 30 minutes, even near the airport. Also, I noticed that the help section didn’t show local contact info or Spanish-language support.""
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Medium,Timothy Garner,XL,App Review,Needs Review,Route Optimization,timothy.garner@riderapp.com
+"
+Dark mode toggle resets on page refresh.
+","May 23, 2025","
+**Description:**
+
+**Steps to Reproduce:**
+
+**Expected Behavior vs Actual Behavior:**
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,High,Luis Smith,S,User Feedback,Won't Do,"Booking Flow, Real-Time Incident Reporting",luis.smith@riderapp.com
+"
+Scheduled rides not triggering notifications
+","September 22, 2024","
+'> Users report that when a ride is scheduled in advance, no push notification or SMS is sent when the driver is en route. This leads to confusion and missed pickups. Issue seems to occur consistently for rides scheduled more than 24 hours ahead.
+
+**Description:** Users report that when a ride is scheduled in advance, no push notification or SMS is sent when the driver is en route. This leads to confusion and missed pickups. Issue seems to occur consistently for rides scheduled more than 24 hours ahead.
+
+**Steps to Reproduce:**
+
+**Expected Behavior vs Actual Behavior:**
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Medium,John Miller,XS,App Review,Backlog,"Regional Regulations, Route Optimization",john.miller@riderapp.com
+"
+Sheila review
+","July 5, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Brandy Williams,XS,User Feedback,Shipped,"In-App Chat, Route Optimization",brandy.williams@riderapp.com
+"
+First reviewer run
+","December 10, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Critical,Wendy Delgado,XL,Driver Forum,Backlog,"Real-Time Incident Reporting, Route Optimization",wendy.delgado@riderapp.com
+"
+Testing Rider App Keyboard functionality
+","November 27, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Craig French,L,User Feedback,In Progress,"In-App Chat, Referral Program",craig.french@riderapp.com
+"
+Can't file issues
+","May 28, 2025","
+**Description:** linear is broken
+
+**Steps to Reproduce:** see screenshot below
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Ronald King,S,Customer Support,Needs Review,"Driver KYC Verification, Earnings Dashboard",ronald.king@riderapp.com
+"
+Vulnerability reported across webapp
+","January 18, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Jason Reese,M,User Feedback,Shipped,"Earnings Dashboard, Pricing Algorithm",jason.reese@riderapp.com
+"
+requiremetn 1
+","September 7, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Critical,Amanda Allison,XL,User Feedback,Won't Do,Real-Time Incident Reporting,amanda.allison@riderapp.com
+"
+Analyze Requests from Apple
+","May 27, 2025","
+Review all customer requests from [Apple](https://linear.app/rideshare-company/customer/apple-7d30bdd2f783) and summarize the intent and narrative of their asks
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Medium,Paul Riddle,XS,Internal QA,Won't Do,Referral Program,paul.riddle@riderapp.com
+"
+Noting a huge latency issue - can you please look into this and find all the PRs that could be related?
+","October 2, 2024","
+Huge risk for WF bank as our customer, experiencing latency issues.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Critical,Joseph Warner,M,Sales Request,In Progress,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",joseph.warner@riderapp.com
+"
+Analyze all customer requests in to do status
+","November 9, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Medium,Gerald Day,S,Customer Support,In Progress,"Fraud Detection, Pricing Algorithm",gerald.day@riderapp.com
+"
+Create PR for this project
+","January 16, 2025","
+Create a PRD based on all of the issues in this project for my team to work on
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Edward Velasquez,M,Internal QA,Needs Review,"Driver KYC Verification, Route Optimization",edward.velasquez@riderapp.com
+"
+Trends across Mexico Launch
+","April 13, 2025","
+Analyze all Project Updates that have been provided in this workspace the last 6 months and provide a summary of trends that you've seen.
+
+Format for this should be 3-4 sections covering the major trends with 2-3 bullets each explaining them.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Low,Sarah White,M,Sales Request,In Progress,Real-Time Incident Reporting,sarah.white@riderapp.com
+"
+Oauth Vulnerability detected
+","May 18, 2025","
+Can you please review this issue detected by one of our users?
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,High,Amanda Good,M,Driver Forum,Shipped,In-App Chat,amanda.good@riderapp.com
+"
+Enable ability to filter searches by date range
+","December 29, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,High,Cody Brennan,M,User Feedback,In Progress,"Booking Flow, Earnings Dashboard",cody.brennan@riderapp.com
+"
+Filter by date has missing results
+","February 28, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Peter Gardner,L,Executive Request,Needs Review,"Real-Time Incident Reporting, Regional Regulations",peter.gardner@riderapp.com
+"
+Users aren't receiving login verification codes
+","January 30, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Critical,Catherine Johnson,XS,User Feedback,In Progress,"Driver KYC Verification, Fraud Detection",catherine.johnson@riderapp.com
+"
+Checkout button blocked by promo notification
+","October 23, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Critical,Brandon Hughes,XS,User Feedback,Won't Do,"Driver KYC Verification, Referral Program",brandon.hughes@riderapp.com
+"
+Payments methods not saving
+","February 27, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Low,John Green,M,User Feedback,In Progress,Route Optimization,john.green@riderapp.com
+"
+Search with special characters returning no results
+","June 10, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Brooke Hall,M,Customer Support,Won't Do,"Booking Flow, Real-Time Incident Reporting",brooke.hall@riderapp.com
+"
+Bottom of dropdown menus cut off on Android screens
+","February 27, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Alicia Thompson,XL,Internal QA,Backlog,"Regional Regulations, Route Optimization",alicia.thompson@riderapp.com
+"
+Delayed push notifications for order updates
+","January 25, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Amy Gray,XS,User Feedback,Backlog,"In-App Chat, Route Optimization",amy.gray@riderapp.com
+"
+Add security key as a 2FA method
+","September 29, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Devon Robbins,XL,Customer Support,Won't Do,"Real-Time Incident Reporting, Route Optimization",devon.robbins@riderapp.com
+"
+Enable geo-based language setting
+","July 13, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Low,Daniel Cooper,XL,User Feedback,Shipped,"In-App Chat, Referral Program",daniel.cooper@riderapp.com
+"
+Add support for Euro on receipts
+","December 29, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Melissa Richardson,M,Driver Forum,Needs Review,"Driver KYC Verification, Earnings Dashboard",melissa.richardson@riderapp.com
+"
+Migrate to React 19
+","January 27, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Timothy Montoya,M,Driver Forum,Shipped,"Earnings Dashboard, Pricing Algorithm",timothy.montoya@riderapp.com
+"
+Add support for multi-currency payments
+","December 20, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Critical,Patricia Smith,M,User Feedback,Needs Review,Real-Time Incident Reporting,patricia.smith@riderapp.com
+"
+Create downloadable usage summaries
+","December 1, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Darren Serrano,L,Executive Request,Shipped,Referral Program,darren.serrano@riderapp.com
+"
+Button not working with Slack integration
+","January 26, 2025","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Critical,James Smith,S,Driver Forum,Needs Review,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",james.smith@riderapp.com
+"
+Timezone setting reverts to UTC after user logs out and back in.
+","September 20, 2024","
+**Description:** 
+
+**Steps to Reproduce:** 
+
+**Expected Behavior vs Actual Behavior:** 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Medium,Christie Curry,M,Internal QA,Shipped,"Fraud Detection, Pricing Algorithm",christie.curry@riderapp.com
+"
+Dark mode toggle resets after page refresh
+","October 7, 2024","
+Dark mode toggle resets on page refresh
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Medium,Tasha Walters,XL,Internal QA,Won't Do,"Driver KYC Verification, Route Optimization",tasha.walters@riderapp.com
+"
+Testing Rider App Keyboard functionality
+","June 6, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Medium,Kristen Wood,XL,Executive Request,Needs Review,Real-Time Incident Reporting,kristen.wood@riderapp.com
+"
+App crashes on launch for Android users
+","October 15, 2024","
+'@lena said:
+
+> App crashes when opening on Android
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Alexis Stark,S,Customer Support,Backlog,Pricing Algorithm,alexis.stark@riderapp.com
+"
+Implement 2025 brand guidelines
+","October 23, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Low,Cody Taylor,M,Customer Support,Needs Review,Real-Time Incident Reporting,cody.taylor@riderapp.com
+"
+Update payment methods
+","February 17, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Mary Ramirez,XS,Customer Support,Won't Do,Referral Program,mary.ramirez@riderapp.com
+"
+Thign 1
+","December 3, 2024","
+Risk Analysis: 
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Low,Katherine Blair,S,App Review,Needs Review,"Booking Flow, Earnings Dashboard",katherine.blair@riderapp.com
+"
+Buttons don't appear alphabetically ordered
+","March 7, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Wayne Stewart DDS,XL,User Feedback,Needs Review,"Real-Time Incident Reporting, Regional Regulations",wayne.stewart dds@riderapp.com
+"
+Improve testing suite
+","February 15, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Low,Christopher Owens,XS,Internal QA,Shipped,"Driver KYC Verification, Fraud Detection",christopher.owens@riderapp.com
+"
+Button isn't visible when all fields are filled out.
+","April 12, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Mary Higgins,S,Customer Support,Shipped,"Driver KYC Verification, Referral Program",mary.higgins@riderapp.com
+"
+6th team member can't be added in the application.
+","February 19, 2025","
+When you add a 6th member, an error occurs.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Critical,Amanda Weaver,XL,Internal QA,Won't Do,Route Optimization,amanda.weaver@riderapp.com
+"
+Late-night ride bookings return 'unavailable' error
+","November 9, 2024","
+**Description:** dasdsad
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Raymond Owens,L,Executive Request,In Progress,"Booking Flow, Real-Time Incident Reporting",raymond.owens@riderapp.com
+"
+As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card
+","September 12, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,High,Erica Peters,XS,Executive Request,Won't Do,"Regional Regulations, Route Optimization",erica.peters@riderapp.com
+"
+As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options
+","February 27, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Nicholas Perkins,M,User Feedback,Shipped,"In-App Chat, Route Optimization",nicholas.perkins@riderapp.com
+"
+As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account
+","June 17, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Joel Bradley,XL,Internal QA,Shipped,"Real-Time Incident Reporting, Route Optimization",joel.bradley@riderapp.com
+"
+Support routing rules that avoid toll roads by default
+","August 26, 2024","
+Users have reported that support routing rules that avoid toll roads by default, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Medium,Heather Chapman,L,Driver Forum,In Progress,"In-App Chat, Referral Program",heather.chapman@riderapp.com
+"
+Incorrect local currency shown on receipts
+","November 28, 2024","
+Users have reported that incorrect local currency shown on receipts, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Kyle Padilla,M,App Review,Won't Do,"Driver KYC Verification, Earnings Dashboard",kyle.padilla@riderapp.com
+"
+Develop B2B invoicing tools for fleet managers
+","April 17, 2025","
+To complete this, we'll need to:
+
+* Review current implementation and surface gaps
+* Check for related design or research work
+* Align with stakeholders on goals and edge cases
+* Coordinate with QA to validate key paths
+* Flag for rollout behind a feature flag
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,High,Christian King,XS,Executive Request,Backlog,"Earnings Dashboard, Pricing Algorithm",christian.king@riderapp.com
+"
+Salesforce Integration
+","June 4, 2025","
+Customer needs 2-way sync with SFDC
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,High,Jose Pitts,XL,Sales Request,In Progress,Real-Time Incident Reporting,jose.pitts@riderapp.com
+"
+Live ride view drops off after app backgrounding
+","March 14, 2025","
+When attempting to live ride view drops off after app backgrounding, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Dr. Heather Horne,XL,Customer Support,Backlog,Referral Program,dr..heather horne@riderapp.com
+"
+Test vehicle types in the restaurant partner portal
+","April 29, 2025","
+Scope out what's already in place for test vehicle types in the restaurant partner portal. From there, I'll sync with anyone who's worked on this before and flag any dependencies or blockers. Once that’s clear, I’ll break the work into smaller steps and get started on the first pass.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Low,Lindsay Jarvis,S,Internal QA,Won't Do,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",lindsay.jarvis@riderapp.com
+"
+Ride receipts show incorrect department info via API
+","March 28, 2025","
+When attempting to ride receipts show incorrect department info, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Critical,Eric Mathews,M,Driver Forum,Shipped,"Fraud Detection, Pricing Algorithm",eric.mathews@riderapp.com
+"
+RELEASE 5
+","February 1, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Tiffany Martin,XS,App Review,Needs Review,"Driver KYC Verification, Route Optimization",tiffany.martin@riderapp.com
+"
+Higher checkout abandonment rates from users unable to pay
+","January 3, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Low,Brittany Garcia,M,Executive Request,In Progress,Real-Time Incident Reporting,brittany.garcia@riderapp.com
+"
+Lower market adoption due to payment friction
+","December 13, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Natalie Peterson,L,App Review,Won't Do,"Booking Flow, Earnings Dashboard",natalie.peterson@riderapp.com
+"
+Lost revenue to competitors who already support these payment methods
+","October 11, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Critical,Natalie Atkins,M,Sales Request,Needs Review,"Real-Time Incident Reporting, Regional Regulations",natalie.atkins@riderapp.com
+"
+Admin dashboard crashes when filtering by ride policy
+","October 26, 2024","
+Users have reported that admin dashboard crashes when filtering by ride policy, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Leslie Gomez,L,Customer Support,Backlog,"Driver KYC Verification, Fraud Detection",leslie.gomez@riderapp.com
+"
+Interview our newest customer
+","May 22, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Critical,Corey Baker,M,Executive Request,In Progress,"Driver KYC Verification, Referral Program",corey.baker@riderapp.com
+"
+As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card
+","August 30, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,High,Adrienne Rhodes,L,Customer Support,Won't Do,Route Optimization,adrienne.rhodes@riderapp.com
+"
+As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options
+","August 16, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Medium,Brandi Acevedo,S,Internal QA,Won't Do,"Booking Flow, Real-Time Incident Reporting",brandi.acevedo@riderapp.com
+"
+As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account
+","April 24, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Rebekah Smith,XS,Customer Support,Won't Do,"Regional Regulations, Route Optimization",rebekah.smith@riderapp.com
+"
+As a rider in Spain, I want to use Bizum, so I can pay directly from my bank account
+","May 20, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Emily Wood,M,User Feedback,Shipped,"In-App Chat, Route Optimization",emily.wood@riderapp.com
+"
+As a rider, I want to see only payment methods available in my country, so I don’t get confused by irrelevant options
+","August 26, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Low,Cassandra Andersen,XL,Customer Support,Won't Do,"Real-Time Incident Reporting, Route Optimization",cassandra.andersen@riderapp.com
+"
+As a rider in Mexico, I want to pay with OXXO Pay or SPEI, so I don’t have to use a credit card
+","February 11, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Low,Vincent Roy,XL,Internal QA,Backlog,"In-App Chat, Referral Program",vincent.roy@riderapp.com
+"
+Push notifications not delivered to managed iPhones
+","July 13, 2025","
+When attempting to push notifications not delivered to managed iphones, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Critical,Annette Pearson DDS,XS,Driver Forum,In Progress,"Driver KYC Verification, Earnings Dashboard",annette.pearson dds@riderapp.com
+"
+Security Incident [Privarte]
+","May 17, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Adam Gibson,M,Customer Support,In Progress,"Earnings Dashboard, Pricing Algorithm",adam.gibson@riderapp.com
+"
+Create a webpage for hosting videos embedded from youtube
+","December 10, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Low,Jacob Ford,L,User Feedback,Needs Review,Real-Time Incident Reporting,jacob.ford@riderapp.com
+"
+We want a dark mode version of the app
+","June 15, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Kelly Nelson,XL,Customer Support,Needs Review,Referral Program,kelly.nelson@riderapp.com
+"
+Mockup
+","August 16, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,High,James Foster,S,Internal QA,Backlog,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",james.foster@riderapp.com
+"
+Prepare for Bob's start tomorrow
+","March 12, 2025","
+Address: xyz
+
+Position: engineer
+
+---
+
+Bob is starting tomorrow
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Low,Sue Glenn,S,Internal QA,Needs Review,"Fraud Detection, Pricing Algorithm",sue.glenn@riderapp.com
+"
+SSO login failing intermittently with Azure AD
+","June 6, 2025","
+When attempting to sso login failing intermittently with azure ad, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Medium,Ryan Cochran,S,Customer Support,Backlog,"Driver KYC Verification, Route Optimization",ryan.cochran@riderapp.com
+"
+Team invite emails flagged as spam by Gmail
+","June 17, 2025","
+When attempting to team invite emails flagged as spam by gmail, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,Critical,Andrea Berger,XS,Executive Request,Needs Review,Real-Time Incident Reporting,andrea.berger@riderapp.com
+"
+Conflicting policies for hybrid/remote teams
+","April 8, 2025","
+Bug reported by multiple enterprise admins — conflicting policies for hybrid/remote teams leads to unexpected errors or missing data. Logs confirm this is reproducible and not environment-specific.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Medium,Jeremiah Jones,XL,Sales Request,Won't Do,"Booking Flow, Earnings Dashboard",jeremiah.jones@riderapp.com
+"
+Prep marketing assets
+","October 3, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Destiny Kelley,L,Customer Support,Shipped,"Real-Time Incident Reporting, Regional Regulations",destiny.kelley@riderapp.com
+"
+Excessive captcha prompts during login process
+","November 7, 2024","
+'@lena said:
+
+> I just had to do captcha 13 times before I was able to log in.
+",,Web,Low,Dean Kaiser,XL,App Review,Needs Review,"Driver KYC Verification, Fraud Detection",dean.kaiser@riderapp.com
+"
+Login page is prompting Captcha too many times
+","August 5, 2024","
+**Description:** 
+
+**Steps to Reproduce:** 
+
+**Expected Behavior vs Actual Behavior:** 
+",,Cross-platform,Medium,Rebecca Bell,M,Driver Forum,Shipped,"Driver KYC Verification, Referral Program",rebecca.bell@riderapp.com
+"
+Update profile page settings
+","October 5, 2024","
+
+",,iOS,Low,Kimberly Rocha,L,Internal QA,Shipped,Route Optimization,kimberly.rocha@riderapp.com
+"
+Update brand assets
+","July 19, 2025","
+
+",,Cross-platform,Critical,Samantha Wilkins,M,Sales Request,Backlog,"Booking Flow, Real-Time Incident Reporting",samantha.wilkins@riderapp.com
+"
+Expand to additional regional payment providers if needed
+","December 19, 2024","
+
+",,Android,High,Brian Lee,M,Internal QA,Needs Review,"Regional Regulations, Route Optimization",brian.lee@riderapp.com
+"
+Fine-tune payment retry logic for failed transactions
+","March 16, 2025","
+
+",,iOS,Medium,Michael Weaver,S,App Review,Won't Do,"In-App Chat, Route Optimization",michael.weaver@riderapp.com
+"
+Optimize fraud detection based on real-world data
+","December 16, 2024","
+
+",,Android,Critical,Sarah Hendricks,XL,Executive Request,In Progress,"Real-Time Incident Reporting, Route Optimization",sarah.hendricks@riderapp.com
+"
+Teams tab missing for some enterprise accounts
+","August 19, 2024","
+Users have reported that teams tab missing for some enterprise accounts, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",,Android,Medium,Michelle Williamson,XS,Internal QA,In Progress,"In-App Chat, Referral Program",michelle.williamson@riderapp.com
+"
+Unable to override default tip amount for company rides
+","June 15, 2025","
+Bug reported by multiple enterprise admins — unable to override default tip amount for company rides leads to unexpected errors or missing data. Logs confirm this is reproducible and not environment-specific.
+",,Android,Critical,Timothy Harris,XS,App Review,Shipped,"Driver KYC Verification, Earnings Dashboard",timothy.harris@riderapp.com
+"
+Enterprise email invite flow lacks custom messaging
+","January 11, 2025","
+When attempting to enterprise email invite flow lacks custom messaging, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",,Cross-platform,Low,Jeremy Howard,L,Customer Support,Backlog,"Earnings Dashboard, Pricing Algorithm",jeremy.howard@riderapp.com
+"
+Performance monitoring and fallback mechanisms in place
+","March 16, 2025","
+
+",,Cross-platform,High,Jerry Rollins,M,User Feedback,In Progress,Real-Time Incident Reporting,jerry.rollins@riderapp.com
+"
+Payment methods dynamically enabled based on user location
+","October 12, 2024","
+
+",,iOS,Critical,Teresa Hernandez,L,Internal QA,Needs Review,Referral Program,teresa.hernandez@riderapp.com
+"
+Customer support team trained on payment-related issues
+","December 19, 2024","
+
+",,Android,Low,Carlos Kramer,XL,Internal QA,Needs Review,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",carlos.kramer@riderapp.com
+"
+Full public rollout in Mexico and Spain
+","July 22, 2025","
+
+",,iOS,Low,Jeffrey Long,XL,Internal QA,Needs Review,"Fraud Detection, Pricing Algorithm",jeffrey.long@riderapp.com
+"
+Custom ride purpose dropdown isn’t editable in dashboard
+","March 4, 2025","
+When attempting to custom ride purpose dropdown isn’t editable in dashboard, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",,iOS,Critical,Matthew Jones,L,Sales Request,Shipped,"Driver KYC Verification, Route Optimization",matthew.jones@riderapp.com
+"
+Passenger info shows personal email instead of work email
+","November 22, 2024","
+Bug reported by multiple enterprise admins — passenger info shows personal email instead of work email leads to unexpected errors or missing data. Logs confirm this is reproducible and not environment-specific.
+",,Android,Medium,Cheryl Parker,L,App Review,Won't Do,Real-Time Incident Reporting,cheryl.parker@riderapp.com
+"
+Webhook retries failing silently
+","October 22, 2024","
+Users have reported that webhook retries failing silently, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",,Cross-platform,Critical,Tracey Ford,XL,Driver Forum,Needs Review,"Booking Flow, Earnings Dashboard",tracey.ford@riderapp.com
+"
+afserve
+","April 28, 2025","
+**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+",,Cross-platform,Critical,Matthew Ball,XL,Driver Forum,Won't Do,"Real-Time Incident Reporting, Regional Regulations",matthew.ball@riderapp.com
+"
+Live ride view drops off after app backgrounding
+","May 11, 2025","
+When attempting to live ride view drops off after app backgrounding, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",,Backend,Critical,James Baker,XS,Executive Request,Shipped,"Driver KYC Verification, Fraud Detection",james.baker@riderapp.com
+"
+afsdnl;adsjnkads
+","November 26, 2024","
+afsdnl;adsjnkads
+",,Web,High,Lisa Mason,XS,Internal QA,Needs Review,"Driver KYC Verification, Referral Program",lisa.mason@riderapp.com
+"
+Ask from Jack Mangan
+","December 17, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",,Cross-platform,Critical,Xavier Davis,M,Customer Support,In Progress,Route Optimization,xavier.davis@rider.com
+"
+Back button skips past multiple screens in iOS app
+","December 2, 2024","
+Bug reported by multiple enterprise admins — back button skips past multiple screens in ios app leads to unexpected errors or missing data. Logs confirm this is reproducible and not environment-specific.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Low,Benjamin Delgado,S,Executive Request,Shipped,"Booking Flow, Real-Time Incident Reporting",benjamin.delgado@riderapp.com
+"
+Select test users in Mexico & Spain onboarded to new payment methods
+","February 3, 2025","
+
+",,Backend,Low,Jeffrey Williams,XS,App Review,In Progress,"Regional Regulations, Route Optimization",jeffrey.williams@riderapp.com
+"
+Fraud detection & currency conversion enhancements implemented
+","February 13, 2025","
+
+",,Cross-platform,Medium,Mrs. Linda Green,S,Internal QA,Shipped,"In-App Chat, Route Optimization",mrs..linda green@riderapp.com
+"
+Initial feedback gathered from local banking partners
+","January 4, 2025","
+
+",,iOS,Critical,Melissa Jones,M,Sales Request,Backlog,"Real-Time Incident Reporting, Route Optimization",melissa.jones@riderapp.com
+"
+Compliance approvals for SPEI and Bizum finalized
+","February 23, 2025","
+
+",,Android,Medium,Stephanie Wells,S,App Review,Backlog,"In-App Chat, Referral Program",stephanie.wells@riderapp.com
+"
+OXXO Pay, SPEI, and Bizum integrated in a staging environment
+","February 12, 2025","
+
+",,Cross-platform,Critical,Charles Guerrero,S,Executive Request,In Progress,"Driver KYC Verification, Earnings Dashboard",charles.guerrero@riderapp.com
+"
+Multi-currency support (MXN & EUR) functional in backend
+","September 27, 2024","
+
+",,iOS,Critical,Jane Lopez,M,Internal QA,Won't Do,"Earnings Dashboard, Pricing Algorithm",jane.lopez@riderapp.com
+"
+Basic checkout flow with local payments tested by internal QA team
+","July 6, 2025","
+
+",,Android,Critical,Wendy Hoffman,XS,User Feedback,Shipped,Real-Time Incident Reporting,wendy.hoffman@rider.com
+"
+Update API
+","October 7, 2024","
+
+",,Backend,Critical,Jacqueline Kelly,XL,Executive Request,Backlog,Referral Program,jacqueline.kelly@riderapp.com
+"
+Set up customer calls
+","September 22, 2024","
+
+",,Cross-platform,Critical,Justin Martinez,S,Executive Request,In Progress,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",justin.martinez@riderapp.com
+"
+Write spec
+","August 7, 2024","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,Critical,Barbara Cline,M,App Review,In Progress,"Fraud Detection, Pricing Algorithm",barbara.cline@riderapp.com
+"
+Design partner dashboard in Mexico City
+","September 2, 2024","
+To complete this, we'll need to:
+
+* Review current implementation and surface gaps
+* Check for related design or research work
+* Align with stakeholders on goals and edge cases
+* Coordinate with QA to validate key paths
+* Flag for rollout behind a feature flag
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Web,High,Brandy Farrell,M,Internal QA,Backlog,"Driver KYC Verification, Route Optimization",brandy.farrell@riderapp.com
+"
+Can we get a profile picture generator in the app?
+","February 18, 2025","
+'@lena said:
+
+> Can we get a profile picture generator in the app?
+",,iOS,High,Kristi Rivas,XL,Customer Support,Backlog,Real-Time Incident Reporting,kristi.rivas@riderapp.com
+"
+Captcha
+","March 11, 2025","
+'<Issue description>
+
+## <Priority>
+
+@lena said:
+
+> I just had to do captcha 20 times 🤖
+",,iOS,Critical,Carol Odonnell,XS,Sales Request,Won't Do,"Booking Flow, Earnings Dashboard",carol.odonnell@riderapp.com
+"
+Develop region-specific training programs in post-ride surveys
+","August 25, 2024","
+I'll need to scope out what's already in place for develop region-specific training programs in post-ride surveys. From there, I'll sync with anyone who's worked on this before and flag any dependencies or blockers. Once that’s clear, I’ll break the work into smaller steps and get started on the first pass.
+",,Cross-platform,Medium,Brittany Gonzalez,S,App Review,Shipped,"Real-Time Incident Reporting, Regional Regulations",brittany.gonzalez@riderapp.com
+"
+Add new profile page
+","June 13, 2025","
+
+",,iOS,Medium,Denise Howard,XS,App Review,In Progress,"Driver KYC Verification, Fraud Detection",denise.howard@riderapp.com
+"
+Add safety features
+","February 18, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Alex Tucker,XL,User Feedback,Won't Do,"Driver KYC Verification, Referral Program",alex.tucker@riderapp.com
+"
+Updated payment page
+","September 18, 2024","
+
+",,Web,High,Chad Mata,XS,Driver Forum,Backlog,Route Optimization,chad.mata@riderapp.com
+"
+Launch partner landing page on Framer
+","September 11, 2024","
+
+",,Cross-platform,Low,Joyce Rodriguez,M,Customer Support,Needs Review,"Booking Flow, Real-Time Incident Reporting",joyce.rodriguez@riderapp.com
+"
+Update ReadMe for GH PRs
+","September 24, 2024","
+
+",,Backend,High,Karen Ali,M,App Review,Won't Do,"Regional Regulations, Route Optimization",karen.ali@riderapp.com
+"
+i think we have an outage
+","July 14, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",,Cross-platform,Medium,Katrina Burns,XL,Internal QA,Backlog,"In-App Chat, Route Optimization",katrina.burns@riderapp.com
+"
+Ask from Gino Fordiani
+","May 13, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",,iOS,Critical,Abigail Torres,L,Driver Forum,Won't Do,"Real-Time Incident Reporting, Route Optimization",abigail.torres@riderapp.com
+"
+Ask from Gino Fordiani
+","July 10, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+",,Web,Critical,Ryan Wilson,XL,User Feedback,Needs Review,"In-App Chat, Referral Program",ryan.wilson@riderapp.com
+"
+Profile button not opening user settings
+","July 29, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+",,Backend,Medium,Jacob Tran,XS,Customer Support,Won't Do,"Driver KYC Verification, Earnings Dashboard",jacob.tran@riderapp.com
+"
+Webhook retries failing silently
+","May 5, 2025","
+Users have reported that webhook retries failing silently, especially when managing larger ride volumes. The issue appears to happen consistently under specific conditions and may be related to recent updates.
+",,Web,Critical,Robert Sanchez,M,Executive Request,Won't Do,"Earnings Dashboard, Pricing Algorithm",robert.sanchez@riderapp.com
+"
+Ask from Tyler Black
+","July 21, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** sdfgsd
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+",,iOS,High,Brian Casey,M,Internal QA,Shipped,Real-Time Incident Reporting,brian.casey@riderapp.com
+"
+Localization: Adapt the app and service features for the Mexican market
+","July 11, 2025","
+
+",,Cross-platform,Critical,Gary Williams,XS,Customer Support,Needs Review,Referral Program,gary.williams@riderapp.com
+"
+Login button blocked by popup modal in rider app
+","November 30, 2024","
+'@lena said:
+
+> The login button is blocked by a popup modal in the rider app
+",,Backend,Critical,Megan Powers,L,Sales Request,Backlog,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",megan.powers@riderapp.com
+"
+Homepage is flickering
+","November 25, 2024","
+**Description:** 
+
+**Steps to Reproduce:** 
+
+**Expected Behavior vs Actual Behavior:** 
+
+**Device Information:**
+
+App Version: 
+
+Device Model: 
+",,Cross-platform,Critical,Heather Sanchez PhD,M,Internal QA,In Progress,"Fraud Detection, Pricing Algorithm",heather.sanchez phd@riderapp.com
+"
+Safety features - phone a friend
+","December 10, 2024","
+
+",,Web,Low,Kendra Turner,S,User Feedback,Needs Review,"Driver KYC Verification, Route Optimization",kendra.turner@riderapp.com
+"
+Updated brand assets
+","April 30, 2025","
+
+",,Android,High,Kyle Watts PhD,XL,Executive Request,Needs Review,Real-Time Incident Reporting,kyle.watts phd@riderapp.com
+"
+Rider ratings disabled unintentionally for some accounts
+","March 19, 2025","
+When attempting to rider ratings disabled unintentionally for some accounts, customers are seeing inconsistent behavior or failures. This is impacting both mobile and web environments for enterprise accounts.
+",,Android,High,Veronica Taylor,XS,App Review,Shipped,"Booking Flow, Earnings Dashboard",veronica.taylor@riderapp.com
+"
+Investigate iOS app downtime issue
+","March 3, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Android,Medium,Lisa Davis,XS,Driver Forum,Won't Do,"Real-Time Incident Reporting, Regional Regulations",lisa.davis@riderapp.com
+"
+xyz
+","November 20, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Web,High,Robert Beasley,XS,User Feedback,Backlog,"Driver KYC Verification, Fraud Detection",robert.beasley@riderapp.com
+"
+the app crashed when i hit the home button
+","December 28, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Web,High,Corey Lewis,XS,App Review,Shipped,"Driver KYC Verification, Referral Program",corey.lewis@riderapp.com
+"
+Investigate double charge for morning ride due to payment error
+","December 22, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Android,High,Kevin Barker,L,Sales Request,Won't Do,Route Optimization,kevin.barker@riderapp.com
+"
+abc
+","September 15, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Android,Medium,Danielle Kennedy,M,App Review,Backlog,"Booking Flow, Real-Time Incident Reporting",danielle.kennedy@riderapp.com
+"
+Roll out our rideshare service in Mexico by May
+","October 25, 2024","
+
+",,Web,Critical,Steven Lee,M,User Feedback,Won't Do,"Regional Regulations, Route Optimization",steven.lee@riderapp.com
+"
+Feature 2: Description and value provided
+","April 14, 2025","
+
+",,Backend,High,Cassandra Sutton,M,User Feedback,Won't Do,"In-App Chat, Route Optimization",cassandra.sutton@riderapp.com
+"
+Add new date format (DD/MM/YYYY) in German account reports
+","January 25, 2025","
+This feature would allow admins to wrong date format (dd/mm/yyyy) in german account reports without needing to rely on manual workarounds. Current limitations are causing friction during onboarding and account setup.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,iOS,High,Alexis Graham,M,Customer Support,In Progress,"Real-Time Incident Reporting, Route Optimization",alexis.graham@riderapp.com
+"
+Fix flickering issue on login page preventing clicks
+","February 21, 2025","
+'@lena said:
+
+> The login page is flickering, can't click on login fields!
+",,Cross-platform,Low,Brendan Johnson,L,Internal QA,Backlog,"In-App Chat, Referral Program",brendan.johnson@riderapp.com
+"
+Update our design system
+","August 25, 2024","
+
+",,Backend,Critical,Chelsea Davis,L,User Feedback,Backlog,"Driver KYC Verification, Earnings Dashboard",chelsea.davis@riderapp.com
+"
+Create new logo files
+","January 21, 2025","
+
+",,Cross-platform,Critical,Elizabeth Carroll,L,Customer Support,In Progress,"Earnings Dashboard, Pricing Algorithm",elizabeth.carroll@riderapp.com
+"
+Update brand assets
+","November 4, 2024","
+
+",,Cross-platform,High,Colin Kim,S,Sales Request,Shipped,Real-Time Incident Reporting,colin.kim@riderapp.com
+"
+xyz
+","March 24, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Cross-platform,Medium,Chris Blankenship,S,Sales Request,Shipped,Referral Program,chris.blankenship@riderapp.com
+"
+test
+","January 9, 2025","
+**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+
+---
+
+test
+",,Backend,Critical,Melissa Holland,XS,Executive Request,Shipped,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",melissa.holland@riderapp.com
+"
+i need a new laptop
+","May 2, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Backend,Low,Samantha Clark,M,App Review,Won't Do,"Fraud Detection, Pricing Algorithm",samantha.clark@riderapp.com
+"
+Share sales enablement with GTM teams
+","October 13, 2024","
+
+",,Android,Medium,Brian Flowers,L,Internal QA,Shipped,"Driver KYC Verification, Route Optimization",brian.flowers@riderapp.com
+"
+Share sales enablement with GTM teams
+","August 1, 2024","
+
+",,Web,Medium,Brian Jennings,XS,User Feedback,Needs Review,Real-Time Incident Reporting,brian.jennings@riderapp.com
+"
+Share sales enablement with GTM teams
+","April 27, 2025","
+
+",,iOS,Medium,Cynthia Little,XS,User Feedback,Shipped,,cynthia.little@riderapp.com
+"
+Update branding on X webpage from blurple
+","March 16, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Cross-platform,Medium,Hayden Wolf,XS,Customer Support,In Progress,,hayden.wolf@riderapp.com
+"
+Share sales enablement with GTM teams
+","March 21, 2025","
+
+",,Web,Low,Emily Robinson,L,Internal QA,Won't Do,"Booking Flow, Earnings Dashboard",emily.robinson@riderapp.com
+"
+Driver Recruitment and Training:Develop a strategy for recruiting and training local drivers
+","July 14, 2025","
+This includes onboarding programs, safety training, and incentive structures tailored to the Mexican market.
+",,iOS,Critical,Catherine Thomas,M,Executive Request,Shipped,"Real-Time Incident Reporting, Regional Regulations",catherine.thomas@riderapp.com
+"
+Share sales enablement with GTM teams
+","August 30, 2024","
+
+",,Cross-platform,Low,Jennifer Foster,L,Internal QA,Needs Review,"Driver KYC Verification, Fraud Detection",jennifer.foster@riderapp.com
+"
+Share sales enablement with GTM teams
+","January 25, 2025","
+
+",,Backend,Low,Curtis Robinson,XS,Executive Request,Backlog,"Driver KYC Verification, Referral Program",curtis.robinson@riderapp.com
+"
+Improve button design and functionality
+","July 30, 2024","
+'@lena said:
+
+> the button needs to be better!
+",,Backend,Critical,Maria Le,S,Customer Support,Shipped,Route Optimization,maria.le@riderapp.com
+"
+Test issue
+","August 14, 2024","
+
+",,Backend,High,Christopher Warren,M,Sales Request,Shipped,"Booking Flow, Real-Time Incident Reporting",christopher.warren@riderapp.com
+"
+**Vulnerability Name:** \[Brief title\] **Date Identified:** \[MM/DD/YYYY\] **Severity:** \[Cri...
+","June 5, 2025","
+**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+",,Backend,Low,Justin Wilson,XS,Internal QA,Shipped,"Regional Regulations, Route Optimization",justin.wilson@riderapp.com
+"
+Ask from Lauren Grant
+","September 7, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Android,Medium,Michael Green,S,App Review,Backlog,"In-App Chat, Route Optimization",michael.green@riderapp.com
+"
+Add logo to marketing page
+","November 29, 2024","
+**Description:**
+*<A detailed explanation of the feature or enhancement.>*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**URL Links:**
+[https://www.cleanshot.com](https://www.cleanshot.com)
+
+**Priority:**
+
+- [ ] Low
+- [ ] Medium
+- [ ] High
+
+## **Additional Context:**
+*Any other relevant information or background.*
+
+<Issue description>
+
+## <Priority>
+
+@lena said:
+
+> We're missing the logo on the marketing page. Can you add it in????
+",,Cross-platform,Critical,Natalie Duffy,S,Customer Support,Backlog,"Real-Time Incident Reporting, Route Optimization",natalie.duffy@riderapp.com
+"
+Fix flickering issue on the landing page
+","February 16, 2025","
+**Description:**
+*<A detailed explanation of the feature or enhancement.>*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**URL Links:**
+[https://www.cleanshot.com](https://www.cleanshot.com)
+
+**Priority:**
+
+- [ ] Low
+- [ ] Medium
+- [ ] High
+
+## **Additional Context:**
+*Any other relevant information or background.*
+
+@lena said:
+
+> flickering on the landing page
+",,Cross-platform,High,Justin Johnson,XL,Driver Forum,In Progress,"In-App Chat, Referral Program",justin.johnson@riderapp.com
+"
+Create a new logo design
+","April 7, 2025","
+**Description:**
+*<A detailed explanation of the feature or enhancement.>*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**URL Links:**
+[https://www.cleanshot.com](https://www.cleanshot.com)
+
+**Priority:**
+
+- [ ] Low
+- [ ] Medium
+- [ ] High
+
+## **Additional Context:**
+*Any other relevant information or background.*
+
+@lena said:
+
+> let's make a new logo
+",,Web,Low,Michael Williams,L,Customer Support,In Progress,"Driver KYC Verification, Earnings Dashboard",michael.williams@riderapp.com
+"
+Provide audit logs for all billing-related changes
+","September 11, 2024","
+Having the ability to provide audit logs for all billing-related changes has been a repeated ask from enterprise customers managing large teams. It would streamline ride management and compliance with internal policies.
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Android,Critical,Anthony Reyes,S,Internal QA,Won't Do,"Earnings Dashboard, Pricing Algorithm",anthony.reyes@riderapp.com
+"
+Announce to Slack community
+","June 24, 2025","
+
+",,Web,Critical,Sergio Schmidt,M,App Review,Shipped,Real-Time Incident Reporting,sergio.schmidt@riderapp.com
+"
+dofanboben
+","November 11, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Android,Critical,Carrie Simpson,XL,App Review,Needs Review,Referral Program,carrie.simpson@riderapp.com
+"
+Expense tracking
+","September 30, 2024","
+
+",,Cross-platform,High,Robert Robertson,XS,Sales Request,In Progress,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",robert.robertson@riderapp.com
+"
+Detailed cost breakdown
+","January 9, 2025","
+
+",,Backend,Medium,Jeffrey Mitchell,XL,Executive Request,In Progress,"Fraud Detection, Pricing Algorithm",jeffrey.mitchell@riderapp.com
+"
+User experiencing excessive captcha prompts
+","January 29, 2025","
+**Description:**
+*<A detailed explanation of the feature or enhancement.>*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**URL Links:**
+[https://www.cleanshot.com](https://www.cleanshot.com)
+
+**Priority:**
+
+- [ ] Low
+- [ ] Medium
+- [ ] High
+
+## **Additional Context:**
+*Any other relevant information or background.*
+
+@lena said:
+
+> I've had to do captcha 27 times
+",,Backend,High,Justin Saunders,L,Internal QA,In Progress,"Driver KYC Verification, Route Optimization",justin.saunders@riderapp.com
+"
+Project audit
+","July 12, 2025","
+Recap of how the Mexico launch project has changed throughout it's lifecycle. target date & start date changes, and how much scope increased decreased. 
+",,Web,Critical,Hailey Mullen,M,Executive Request,In Progress,Real-Time Incident Reporting,hailey.mullen@riderapp.com
+"
+App is down on Andriod
+","December 17, 2024","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Backend,Critical,William Reeves,L,Executive Request,Needs Review,,william.reeves@rider.com
+"
+Other slack itnegration
+","February 8, 2025","
+'@tyler said:
+
+> Other slack itnegration
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Medium,Angel Adams,S,Customer Support,Needs Review,,angel.adams@riderapp.com
+"
+Oauth login timeout error on Chrome
+","March 5, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Cross-platform,Low,Cynthia Leon,XL,User Feedback,Backlog,"Booking Flow, Earnings Dashboard",cynthia.leon@riderapp.com
+"
+Data Analysis
+","February 15, 2025","
+
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Cross-platform,Low,Brandon Robinson,XS,App Review,Needs Review,"Real-Time Incident Reporting, Regional Regulations",brandon.robinson@riderapp.com
+"
+AI Product Assistant
+","May 21, 2025","
+Agent go beyond the code and provide a real-time understanding of the large quantities of data you collect in Linear. Review and summarization tasks that may have taken hours or days before can now be accomplished in minutes!
+",,Web,Medium,Ethan Meyers,XS,Customer Support,Needs Review,"Driver KYC Verification, Fraud Detection",ethan.meyers@riderapp.com
+"
+Coding Agents
+","May 5, 2025","
+Linear has partnered with a number of AI tools that that are available to integrate with your workspace. 
+
+These will provide a number of different use cases focussed on increasing development velocity, generating draft PRs, and providing visibility into your organization.  
+",,Cross-platform,Low,Tiffany Stewart,S,User Feedback,In Progress,"Driver KYC Verification, Referral Program",tiffany.stewart@riderapp.com
+"
+Client meeting
+","July 2, 2025","
+
+",,Backend,Low,Justin Brown,M,User Feedback,Needs Review,Route Optimization,justin.brown@riderapp.com
+"
+Flickering on login page
+","April 6, 2025","
+'@lena said:
+
+> Im noticing some flickering on the login page
+",,Android,Critical,Edwin Williamson,L,App Review,Needs Review,"Booking Flow, Real-Time Incident Reporting",edwin.williamson@riderapp.com
+"
+Z index on homepage is wrong
+","September 7, 2024","
+**Description:** 
+
+**Steps to Reproduce:** 
+
+**Expected Behavior vs Actual Behavior:** 
+
+**Device Information:**
+
+App Version: 
+
+Device Model: 
+
+Operating System: 
+",,Backend,Critical,Mr. David Rogers,XL,Sales Request,Won't Do,"Regional Regulations, Route Optimization",mr..david rogers@riderapp.com
+"
+DDoS attack
+","September 27, 2024","
+**Vulnerability Name:** \[Brief title\]
+
+**Date Identified:** \[MM/DD/YYYY\]
+
+**Severity:** \[Critical / High / Medium / Low\]
+
+**Systems Affected:** \[List affected systems or components\]
+
+**Description:** \[Brief overview of the issue and potential impact\]
+
+---
+
+**Attack Vector:** \[How the vulnerability can be exploited\]
+
+**Proof of Concept (if any):** \[Description or link to evidence\]
+
+**Risk Assessment:**
+
+* **Likelihood:** \[High / Medium / Low\]
+* **Impact:** \[High / Medium / Low\]
+
+---
+
+**Immediate Actions:** \[Steps to mitigate immediately\]
+
+**Long-term Fix:** \[Proposed permanent solution\]
+
+**Validation Steps:** \[How to confirm the issue is resolved\]
+",,Android,Low,Jill Russell,XL,Driver Forum,Needs Review,"In-App Chat, Route Optimization",jill.russell@riderapp.com
+"
+Update GH Integration ReadMe
+","May 8, 2025","
+
+",,Android,Critical,Megan Miller,XS,Driver Forum,Backlog,"Real-Time Incident Reporting, Route Optimization",megan.miller@riderapp.com
+"
+Testing Rider App Keyboard functionality
+","October 28, 2024","
+
+",,Cross-platform,Medium,Jennifer Gill,L,Internal QA,Shipped,"In-App Chat, Referral Program",jennifer.gill@riderapp.com
+"
+fdsaabklbfsdabjdsfa
+","March 23, 2025","
+fdsaabklbfsdabjdsfa
+",,iOS,Medium,David Novak,S,Sales Request,Shipped,"Driver KYC Verification, Earnings Dashboard",david.novak@riderapp.com
+"
+Investigate significant latency issues
+","October 19, 2024","
+
+",,Web,Low,Sheila Roberts,L,User Feedback,Needs Review,"Earnings Dashboard, Pricing Algorithm",sheila.roberts@riderapp.com
+"
+Investigate significant latency issues
+","February 10, 2025","
+'@mel said:
+
+> Noticing huge latency issue
+",,Android,High,Glen Smith,XS,Internal QA,Backlog,Real-Time Incident Reporting,glen.smith@riderapp.com
+"
+Relatesd toX
+","May 7, 2025","
+
+",,Cross-platform,Critical,Nathan Bullock,XS,Customer Support,Backlog,Referral Program,nathan.bullock@riderapp.com
+"
+Publish Documentation
+","July 25, 2024","
+
+",,Cross-platform,Critical,Robert Campos,M,Internal QA,Won't Do,"Real-Time Incident Reporting, Regional Regulations, Route Optimization",robert.campos@riderapp.com
+"
+Launch stage 2 of pilot
+","January 4, 2025","
+
+",,iOS,Medium,Emily Green,S,User Feedback,Won't Do,"Fraud Detection, Pricing Algorithm",emily.green@riderapp.com
+"
+Redesign EV Selection Flow Based on User Pain Points
+","November 5, 2024","
+
+",,Cross-platform,High,David Boyd,S,App Review,Shipped,"Driver KYC Verification, Route Optimization",david.boyd@riderapp.com
+"
+Audit EV Option Usability Feedback from Pilot Testers
+","July 23, 2024","
+
+",,Cross-platform,High,Nicole Ryan,M,Sales Request,Needs Review,Real-Time Incident Reporting,nicole.ryan@riderapp.com
+"
+kljdaskhbadsbhlads
+","March 11, 2025","
+kljdaskhbadsbhlads
+",,Web,High,Lynn Lopez,XS,App Review,Needs Review,"Booking Flow, Earnings Dashboard",lynn.lopez@riderapp.com
+"
+app crashed
+","March 24, 2025","
+**Description:** *A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** **Step 1, 2, 3**
+
+**Expected Behavior vs Actual Behavior:** *What you expected to happen.*
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Backend,Low,Jessica Mckee,M,Customer Support,Won't Do,"Real-Time Incident Reporting, Regional Regulations",jessica.mckee@riderapp.com
+"
+change feedback form buttons to pink
+","October 20, 2024","
+
+",,Android,Critical,Mark Nelson,XL,Customer Support,Needs Review,"Driver KYC Verification, Fraud Detection",mark.nelson@riderapp.com
+"
+Update feedback form
+","April 4, 2025","
+Can you change the buttons on the contact form to green
+",,Android,Low,Teresa Martinez,M,Sales Request,In Progress,"Driver KYC Verification, Referral Program",teresa.martinez@riderapp.com
+"
+Investigate x issues reported by customer on new feature
+","January 12, 2025","
+**Description:**
+*A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** asdf
+
+**Expected Behavior:** asdf
+
+**Actual Behavior:** asdf
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: Operating System
+",,Cross-platform,High,Louis Collins,S,Sales Request,Won't Do,Route Optimization,louis.collins@riderapp.com
+"
+Customer reported issue with new feature X
+","December 12, 2024","
+**Description:**
+*A clear and concise description of what the bug is.*
+
+**Steps to Reproduce:** He did xyz
+
+**Expected Behavior:** asdf
+
+**Actual Behavior:** asdf
+
+**Device Information:**
+
+App Version: App Version
+
+Device Model: Device Model
+
+Operating System: sdf
+",,Android,Critical,Mr. James Jones,XS,User Feedback,In Progress,"Booking Flow, Real-Time Incident Reporting",mr..james jones@riderapp.com
+"
+test
+","December 19, 2024","
+test
+",https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMqBYjvx_3S-A8lvH9CofAi9cectldaqJyQ&s,Backend,Critical,Arthur Nichols,XS,Executive Request,Needs Review,"Regional Regulations, Route Optimization",arthur.nichols@riderapp.com
+"
+Design request
+","April 21, 2025","
+**Description:** 
+*A detailed explanation of the feature or enhancement.*
+
+**Problem Statement:**
+*What problem does this feature solve?*
+
+**Proposed Solution:**
+*Describe how you envision the feature working.*
+
+**Benefits:**
+*Explain how this feature improves the app for users or developers.*
+
+**Priority:**
+
+- [ ] Low
+- [X] Medium
+- [ ] High
+
+**Additional Context:**
+*Any other relevant information or background.*
+",,iOS,High,Justin Hoover,S,User Feedback,In Progress,"In-App Chat, Route Optimization",justin.hoover@riderapp.com
+"
+Investigate flickering issue on mobile homepage
+","January 24, 2025","
+'@lena said:
+
+> There's some flickering on the mobile homepage. Can someone look into it?
+",,Web,High,Todd Owens,M,Sales Request,Needs Review,"Real-Time Incident Reporting, Route Optimization",todd.owens@riderapp.com
+"
+Flickering on home screen
+","April 3, 2025","
+
+",,Cross-platform,High,John Calderon,S,App Review,In Progress,"In-App Chat, Referral Program",john.calderon@riderapp.com
+"
+s
+","October 16, 2024","
+
+",,Android,Low,George Cook,XS,Sales Request,Backlog,"Driver KYC Verification, Earnings Dashboard",george.cook@riderapp.com
+,,,,,,,,,,,
