@@ -1,6 +1,6 @@
 # Transform run log
 
-- Run: 2026-09-20T19:48:18
+- Run: 2026-09-20T20:26:45
 - Input: `data/Rideshare_Issue_Tracker.csv`
 - Input SHA-256: `2743f02cd5bfa758fc8eb316c8c750f8ee87f9a081771d34846bd53b81ef8b5f`
 - Rows read: 200
@@ -14,9 +14,20 @@
 | --- | --- | --- |
 | `data/linear_import.csv` | 169 | Yes |
 | `data/linear_import_flagged.csv` | 30 | Only after a human reviews it |
+| `data/missing_key_values.csv` | 0 | Once the blank fields are filled in |
 | `data/duplicates_review.csv` | 34 | **No** — these rows are copies |
 
 `duplicates_review.csv` is a review sheet. Every row in it has already been written to one of the other two files, named in its `Routed To` column. Importing it as well would create each of those issues a second time.
+
+## Rows missing key values
+
+`Status, Priority, Size` decide how an issue behaves in Linear. A blank one does not stop the import, it makes it quietly wrong: no Status lands the issue in the team's default state, no Priority becomes No priority, and no Size leaves it with no estimate. Rows with a blank are withheld from the import file and written to `missing_key_values.csv` instead, with a `Missing Fields` column naming what to fill in.
+
+Only blankness is checked. The value mappings are settled for this export, so an unrecognised value is not a case this script handles.
+
+Junk and duplicates are routed first, so a row that is already flagged or already in a duplicate group keeps that routing even when a key field is blank — both already demand human attention, and splitting a duplicate group across files would defeat the label.
+
+**No rows were withheld.** Every row has a value for `Status`, `Priority`, `Size`, so `missing_key_values.csv` was written with a header and no data rows.
 
 ## Rules applied
 
@@ -35,6 +46,7 @@
 | R11 Blank Assignee/Archived | 199 | Notion reporters are not workspace users |
 | R12 Classify rows | 199 | junk withheld; duplicates labelled and kept |
 | R13 Write flag columns | 30 | trailing columns the importer never reads |
+| R14 Withhold missing values | 0 | blank Status, Priority or Size |
 
 Labels created: **35** across 3 groups (`Platform`, `Source`, `Duplicate`, plus flat tags).
 

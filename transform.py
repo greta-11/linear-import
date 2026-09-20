@@ -40,6 +40,7 @@ IMPORT_COLUMNS = [
 ]
 FLAG_COLUMNS = ["Flag Tier", "Flag Reason"]
 DUPLICATE_REVIEW_COLUMNS = ["Duplicate ID", "Routed To"] + IMPORT_COLUMNS
+MISSING_COLUMNS = IMPORT_COLUMNS + ["Missing Fields"]
 
 SOURCE_FILE_HINT = "Rideshare_Issue_Tracker.csv"
 OUT_DIR = "data"
@@ -47,6 +48,7 @@ LOG_PATH = os.path.join("out", "transform_log.md")
 F_IMPORT = os.path.join(OUT_DIR, "linear_import.csv")
 F_FLAGGED = os.path.join(OUT_DIR, "linear_import_flagged.csv")
 F_DUPES = os.path.join(OUT_DIR, "duplicates_review.csv")
+F_MISSING = os.path.join(OUT_DIR, "missing_key_values.csv")
 
 # --- Rule table ----------------------------------------------------------------
 # Single source of truth for the console report and the run log, so the two can
@@ -66,6 +68,7 @@ RULES = [
     ("R11", "Blank Assignee/Archived", "Notion reporters are not workspace users"),
     ("R12", "Classify rows",          "junk withheld; duplicates labelled and kept"),
     ("R13", "Write flag columns",     "trailing columns the importer never reads"),
+    ("R14", "Withhold missing values", "blank Status, Priority or Size"),
 ]
 
 # --- Enum maps -----------------------------------------------------------------
@@ -115,6 +118,12 @@ TEMPLATE_MARKERS = [
     "[Brief title]", "<Issue description>", "[MM/DD/", "[List affected",
     "[Critical / High", "[Brief overview", "[Describe ", "[Insert ",
 ]
+
+# Source fields that decide how an issue behaves once it is in Linear. A blank
+# one does not stop the import -- it makes it quietly wrong -- so those rows are
+# withheld instead. Only blankness is checked: the value mappings are settled for
+# this export, so an unrecognised value is not a case this script has to handle.
+KEY_FIELDS = ["Status", "Priority", "Size"]
 
 MIN_TITLE_CHARS = 3
 VAGUE_MAX_CHARS = 15
@@ -341,6 +350,16 @@ def find_template_marker(text):
     return None
 
 
+def find_missing_key_fields(record):
+    """R14. Returns the KEY_FIELDS left blank on this row.
+
+    Each blank costs something specific and silent: no Status means the issue
+    lands in whatever default state the team has, no Priority becomes No
+    priority, and no Size leaves the issue with no estimate. The import still
+    succeeds in every case, which is the problem."""
+    return [field for field in KEY_FIELDS if not (record["row"].get(field) or "").strip()]
+
+
 def classify(record):
     """R12. Returns (tier, reason) or (None, None).
 
@@ -449,6 +468,15 @@ def finish_records(records, counters):
         if tier:
             counters[f"tier{tier}"] += 1
             counters["R13"] += 1
+
+        # Junk and duplicates are decided first and keep their routing, so a
+        # missing value only redirects a row that would otherwise be clean.
+        record["missing"] = find_missing_key_fields(record)
+        if record["missing"] and not tier and not record["duplicate_group"]:
+            record["withheld_for_missing"] = True
+            counters["R14"] += 1
+        else:
+            record["withheld_for_missing"] = False
         counters["R12"] += 1
 
 
@@ -460,10 +488,15 @@ def write_csv(path, columns, rows):
 
 
 def write_outputs(records, groups):
-    importable = [r for r in records if not r["tier"]]
     flagged = [r for r in records if r["tier"]]
+    missing = [r for r in records if r["withheld_for_missing"]]
+    importable = [r for r in records if not r["tier"] and not r["withheld_for_missing"]]
 
     write_csv(F_IMPORT, IMPORT_COLUMNS, [r["out"] for r in importable])
+
+    write_csv(F_MISSING, MISSING_COLUMNS, [
+        dict(r["out"], **{"Missing Fields": ", ".join(r["missing"])}) for r in missing
+    ])
 
     write_csv(F_FLAGGED, IMPORT_COLUMNS + FLAG_COLUMNS, [
         dict(r["out"], **{"Flag Tier": f"Tier {r['tier']}", "Flag Reason": r["reason"]})
@@ -474,6 +507,8 @@ def write_outputs(records, groups):
     for group_id, members in groups.items():
         for member in members:
             destination = F_FLAGGED if member["tier"] else F_IMPORT
+            # Duplicates outrank the missing-value check, so no member can be
+            # routed to the missing-values file.
             review_rows.append(dict(
                 member["out"],
                 **{"Duplicate ID": group_id.replace("Group ", "G"),
@@ -481,7 +516,7 @@ def write_outputs(records, groups):
             ))
     write_csv(F_DUPES, DUPLICATE_REVIEW_COLUMNS, review_rows)
 
-    return importable, flagged, review_rows
+    return importable, flagged, missing, review_rows
 
 
 # --- Reporting -----------------------------------------------------------------
@@ -490,14 +525,14 @@ RULE_WIDTH = 30
 BAR = "  " + "\u2500" * 64
 
 
-def print_report(source_path, counters, records, groups, importable, flagged, review_rows):
+def print_report(source_path, counters, records, groups, importable, flagged, missing, review_rows):
     tier1 = [r for r in flagged if r["tier"] == 1]
     tier2 = [r for r in flagged if r["tier"] == 2]
     dropped = len(counters["_dropped_lines"])
 
     print()
     print("  Notion \u2192 Linear transform")
-    print(f"  {source_path} \u2192 3 files")
+    print(f"  {source_path} \u2192 4 files")
     print()
     print(f"  {'Rule':<{RULE_WIDTH}}{'Rows':>5}    Detail")
     print(BAR)
@@ -516,9 +551,11 @@ def print_report(source_path, counters, records, groups, importable, flagged, re
           f" withheld as junk")
     print(f"  {'Flagged  tier 1':<{RULE_WIDTH}}{len(tier1):>5}    deterministic \u2014 placeholder, template, too short")
     print(f"  {'Flagged  tier 2':<{RULE_WIDTH}}{len(tier2):>5}    heuristic \u2014 needs human review, not junk")
+    print(f"  {'Missing key values':<{RULE_WIDTH}}{len(missing):>5}    blank {', '.join(KEY_FIELDS)}")
     print(BAR)
     print(f"  {os.path.basename(F_IMPORT):<{RULE_WIDTH}}{len(importable):>5}    importable")
     print(f"  {os.path.basename(F_FLAGGED):<{RULE_WIDTH}}{len(flagged):>5}    withheld for review")
+    print(f"  {os.path.basename(F_MISSING):<{RULE_WIDTH}}{len(missing):>5}    importable once the blanks are filled")
     print(f"  {os.path.basename(F_DUPES):<{RULE_WIDTH}}{len(review_rows):>5}    review sheet \u2014 do not import")
     print(BAR)
     print(f"  {len(records)} rows written \u00b7 {dropped} row(s) dropped at read \u00b7 0 discarded")
@@ -543,7 +580,7 @@ def label_stats(records):
     return len(labels), len(groups)
 
 
-def write_log(source_path, digest, counters, records, groups, importable, flagged, review_rows):
+def write_log(source_path, digest, counters, records, groups, importable, flagged, missing, review_rows):
     tier1 = [r for r in flagged if r["tier"] == 1]
     tier2 = [r for r in flagged if r["tier"] == 2]
     label_count, group_count = label_stats(records)
@@ -569,11 +606,41 @@ def write_log(source_path, digest, counters, records, groups, importable, flagge
     add("| --- | --- | --- |")
     add(f"| `{F_IMPORT}` | {len(importable)} | Yes |")
     add(f"| `{F_FLAGGED}` | {len(flagged)} | Only after a human reviews it |")
+    add(f"| `{F_MISSING}` | {len(missing)} | Once the blank fields are filled in |")
     add(f"| `{F_DUPES}` | {len(review_rows)} | **No** \u2014 these rows are copies |")
     add("")
     add(f"`{os.path.basename(F_DUPES)}` is a review sheet. Every row in it has already "
         "been written to one of the other two files, named in its `Routed To` column. "
         "Importing it as well would create each of those issues a second time.")
+    add("")
+
+    add("## Rows missing key values")
+    add("")
+    add(f"`{', '.join(KEY_FIELDS)}` decide how an issue behaves in Linear. A blank "
+        "one does not stop the import, it makes it quietly wrong: no Status lands the "
+        "issue in the team's default state, no Priority becomes No priority, and no "
+        "Size leaves it with no estimate. Rows with a blank are withheld from the "
+        f"import file and written to `{os.path.basename(F_MISSING)}` instead, with a "
+        "`Missing Fields` column naming what to fill in.")
+    add("")
+    add("Only blankness is checked. The value mappings are settled for this export, so "
+        "an unrecognised value is not a case this script handles.")
+    add("")
+    add("Junk and duplicates are routed first, so a row that is already flagged or "
+        "already in a duplicate group keeps that routing even when a key field is "
+        "blank \u2014 both already demand human attention, and splitting a duplicate "
+        "group across files would defeat the label.")
+    add("")
+    if missing:
+        add("| Source line | Title | Missing |")
+        add("| --- | --- | --- |")
+        for record in missing:
+            add(f"| {record['line']} | {format_cell(record['title'])} | "
+                f"{format_cell(', '.join(record['missing']))} |")
+    else:
+        add(f"**No rows were withheld.** Every row has a value for "
+            f"{', '.join(f'`{f}`' for f in KEY_FIELDS)}, so "
+            f"`{os.path.basename(F_MISSING)}` was written with a header and no data rows.")
     add("")
 
     add("## Rules applied")
@@ -710,11 +777,12 @@ def main():
     finish_records(records, counters)
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    importable, flagged, review_rows = write_outputs(records, groups)
+    importable, flagged, missing, review_rows = write_outputs(records, groups)
 
     write_log(source_path, sha256_of(source_path), counters, records, groups,
-              importable, flagged, review_rows)
-    print_report(source_path, counters, records, groups, importable, flagged, review_rows)
+              importable, flagged, missing, review_rows)
+    print_report(source_path, counters, records, groups,
+                 importable, flagged, missing, review_rows)
 
 
 if __name__ == "__main__":
